@@ -1,0 +1,30 @@
+<app-process-navbar></app-process-navbar>
+<mat-vertical-stepper>
+    <mat-step>
+      <ng-template matStepLabel>{{ 'productionProgram.currentPeriod' | translate }}</ng-template>
+      <app-production-program-period-n></app-production-program-period-n>
+      <button mat-raised-button color="primary" matStepperNext>{{ 'next' | translate }}</button>
+    </mat-step>
+    <mat-step>
+      <ng-template matStepLabel>{{ 'productionProgram.period' | translate }} n+1</ng-template>
+      <app-production-program-period-n1></app-production-program-period-n1>
+      <button mat-raised-button color="primary"matStepperPrevious>{{ 'previous' | translate }}</button>
+      <button mat-raised-button color="primary" matStepperNext>{{ 'next' | translate }}</button>
+    </mat-step>
+    <mat-step>
+      <ng-template matStepLabel>{{ 'productionProgram.period' | translate }} n+2</ng-template>
+      <app-production-program-period-n2></app-production-program-period-n2>
+      <button mat-raised-button color="primary" matStepperPrevious>{{ 'previous' | translate }}</button>
+      <button mat-raised-button color="primary" matStepperNext>{{ 'next' | translate }}</button>
+    </mat-step>
+    <mat-step>
+       <ng-template matStepLabel>{{ 'productionProgram.period' | translate }} n+3</ng-template>
+       <app-production-program-period-n3></app-production-program-period-n3>
+       <button mat-raised-button color="primary" matStepperPrevious>{{ 'previous' | translate }}</button>
+    </mat-step>
+    <mat-step optional>
+       <ng-template matStepLabel>{{ 'productionProgram.directSales' | translate }}</ng-template>
+       <app-direct-sales></app-direct-sales>
+       <button mat-raised-button color="primary" matStepperPrevious>{{ 'previous' | translate }}</button>
+     </mat-step>
+  </mat-vertical-stepper>

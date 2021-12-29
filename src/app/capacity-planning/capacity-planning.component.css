@@ -1,0 +1,29 @@
+table {
+  width: 100%;
+}
+
+#container-table {
+
+    align-items: center;
+    justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 20px;
+
+  }
+
+  .mat-table {
+    border-collapse: collapse;
+
+
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+  }
+
+  .make-gold {
+    background-color: rgb(255, 160, 160)!important;
+}

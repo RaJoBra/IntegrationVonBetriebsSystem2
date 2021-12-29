@@ -1,0 +1,71 @@
+<app-process-navbar></app-process-navbar>
+<div id="container-table">
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8" >
+
+  <!--- Note that these columns can be defined in any order.
+        The actual rendered columns are set as a property on the row definition" -->
+
+  <!-- Workstarion Column -->
+  <ng-container matColumnDef="workstation">
+    <th mat-header-cell *matHeaderCellDef>{{ 'capacityPlanning.workstation' | translate }}</th>
+    <td mat-cell *matCellDef="let element"> {{element.workstation}} </td>
+  </ng-container>
+
+  <!-- Requirement Column -->
+  <ng-container matColumnDef="capacityRequirements">
+    <th mat-header-cell *matHeaderCellDef>{{ 'capacityPlanning.capacityRequirements' | translate }}</th>
+    <td mat-cell *matCellDef="let element"> {{element.capacityRequirements}} </td>
+  </ng-container>
+
+  <!-- Weight Column -->
+  <ng-container matColumnDef="setupTime">
+    <th mat-header-cell *matHeaderCellDef>{{ 'capacityPlanning.setupTime' | translate }}</th>
+    <td mat-cell *matCellDef="let element"> {{element.setupTime}} </td>
+  </ng-container>
+
+  <!-- Symbol Column -->
+  <ng-container matColumnDef="capacityRequirementsBacklog">
+    <th mat-header-cell *matHeaderCellDef>{{ 'capacityPlanning.capacityRequirementsBacklog' | translate }}</th>
+    <td mat-cell *matCellDef="let element"> {{element.capacityRequirementsBacklog}} </td>
+  </ng-container>
+
+  <!-- Product Column -->
+  <ng-container matColumnDef="setupTimeBacklog">
+    <th mat-header-cell *matHeaderCellDef>{{ 'capacityPlanning.setupTimeBacklog' | translate }}</th>
+    <td mat-cell *matCellDef="let element"> {{element.setupTimeBacklog}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="totalCapacityRequirements">
+    <th mat-header-cell *matHeaderCellDef>{{ 'capacityPlanning.totalCapacityRequirements' | translate }}</th>
+    <td mat-cell *matCellDef="let element"> {{element.totalCapacityRequirements }} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="shift">
+    <th mat-header-cell *matHeaderCellDef>{{ 'capacityPlanning.shift' | translate }}</th>
+    <td mat-cell *matCellDef="let element"> {{element.shift}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="overtime">
+    <th mat-header-cell *matHeaderCellDef>{{ 'capacityPlanning.overtime' | translate }}</th>
+    <td mat-cell *matCellDef="let element"> {{element.overtime}} </td>
+  </ng-container>
+
+      <!-- Buffer -->
+      <ng-container matColumnDef="buffer">
+        <th mat-header-cell *matHeaderCellDef>{{ 'capacityPlanning.buffer' | translate }}</th>
+        <td mat-cell *matCellDef="let element">
+          <form-field mat-form-field appearance="fill">
+            <input matInput type="number" min="0" step="10" [(ngModel)]="element.buffer" (ngModelChange)="updateBuffer(element)">
+          </form-field>
+        </td>
+      </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row  [ngClass]="{'make-gold': row.totalCapacityRequirements > 7200 }"  *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+
+<!-- HTML code for the view of the spinner -->
+<ngx-spinner bdColor="rgba(0, 0, 0, 0.8)" size="large" color="#3f51b5" type="ball-spin-clockwise" [fullScreen]="true">
+  <p style="color: white; margin-top: 50px; font-size: 16px; font-weight: bold">{{ 'upload.spinner' | translate }}</p>
+</ngx-spinner>
+</div>

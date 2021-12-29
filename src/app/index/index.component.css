@@ -1,0 +1,212 @@
+@font-face {
+  font-family: Pattaya;
+  src: url(../../assets/font/Pattaya-Regular.ttf);
+}
+h1 {
+  font-family: 'Pattaya', sans-serif;
+  font-size: 70px;
+}
+
+#hero-text{
+  font-size: 25px;
+  padding-bottom: 30px;
+}
+
+#picture-background {
+
+  height: 500px;
+  width: auto;
+  z-index: 10;
+}
+
+#hero {
+  background-color:#F6F6F6;
+}
+
+.btn-check:focus + .btn-secondary,
+.btn-secondary:focus {
+  color: black;
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.btn:hover {
+  color: black;
+  background-color: #fff;
+  border-color: #ffffff;
+}
+
+
+
+
+
+
+
+
+.btns a {
+  margin: 0 20px;
+  height: 45px;
+  width: 250px;
+  display: block;
+  line-height: 45px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.btns2 a {
+  margin: 0 20px;
+  height: 45px;
+  width: 250px;
+  display: block;
+  line-height: 40px;
+  border-radius: 30px;
+  text-decoration: none;
+
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  overflow: hidden;
+  color: #3f51b5;
+
+  border: 3px solid #3f51b5!important;
+}
+
+.btns a:last-child {
+  background: linear-gradient(90deg, #3f51b5, #3f51b5);
+}
+
+.btns a:hover {
+  background: linear-gradient(90deg, #7686dd, #3f51b5);
+}
+
+.btns2 a:last-child {
+  background: linear-gradient(90deg, #f6f6f6, #f6f6f6);
+  border: #3f51b5 2px;
+}
+
+.btns2 a:hover {
+  background: linear-gradient(90deg, #ffffff, #c3c9ec);
+}
+
+body {
+  background-color: #222!important;
+  font-family: "Montserrat", sans-serif;
+
+
+}
+.site-wrapper {
+  background-color: #fff;
+  max-width: 960px;
+
+  box-sizing: border-box;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 10px 10px 70px rgba(255,255,255,0.5);  
+
+}   
+.item-wrapper {
+  background-color: #fff!important;
+  width: 400px;
+  position: relative;
+  overflow: hidden;
+  margin: auto;
+  padding: 4px;  
+  min-height: 450px;
+}
+
+.item-wrapper .line {
+  background-color: #3f51b5!important;
+  position: absolute;
+}
+
+.item-wrapper .line span {
+  background-color: #e3e3e3!important;;
+  position: inherit;
+  display: block;
+  transition: all 0.4s ease-out;
+}
+.item-wrapper .line-top{
+  top: 0;
+  left: 0;
+  width:100%;
+  height:4px;
+}
+.item-wrapper .line-right{
+  top: 0;
+  right: 0;
+  width:4px;
+  height:100%;
+}
+.item-wrapper .line-bottom{
+  right: 0;
+  bottom: 0;
+  width:100%;
+  height:4px;
+}
+.item-wrapper .line-left {
+  left: 0;
+  bottom: 0;
+  width: 4px;
+  height: 100%;
+}
+.item-wrapper .line-top span{
+  top:inherit;
+  left:inherit;
+  width:0;
+  height:100%;
+}
+.item-wrapper .line-right span{
+  top:inherit;
+  right:inherit;
+  width:100%;
+  height:0;
+}
+.item-wrapper .line-bottom span{
+  right:inherit;
+  bottom:inherit;
+  width:0;
+  height:100%;
+}
+.item-wrapper .line-left span {
+  left: inherit;
+  bottom: inherit;
+  width: 100%;
+  height: 0;
+}
+.item-wrapper:hover .line-top span,
+.item-wrapper:hover .line-bottom span{
+  width:100%;
+}
+.item-wrapper:hover .line-left span,
+.item-wrapper:hover .line-right span{
+  height:100%;
+}
+.item-wrapper > .item{
+  padding:40px 30px;
+  text-align: justify;
+}
+.item-wrapper > .item > h2{
+  font-size: 36px;
+  line-height: 40px;
+}
+.item-wrapper > .item > h2 .title{
+  color: #3f51b5 !important;
+  font-weight: 800;
+}
+.item-wrapper > .item > p{
+  padding:35px 10px 10px;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+  

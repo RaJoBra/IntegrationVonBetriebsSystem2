@@ -1,0 +1,25 @@
+<app-process-navbar></app-process-navbar>
+<mat-vertical-stepper>
+    <mat-step>
+      <ng-template matStepLabel>P1</ng-template>
+      <app-disposition-p1></app-disposition-p1>
+      <button mat-raised-button color="primary" matStepperNext>{{ 'next' | translate }}</button>
+    </mat-step>
+    <mat-step>
+      <ng-template matStepLabel>P2</ng-template>
+      <app-disposition-p2></app-disposition-p2>
+      <button mat-raised-button color="primary" matStepperPrevious>{{ 'previous' | translate }}</button>
+      <button mat-raised-button color="primary" matStepperNext>{{ 'next' | translate }}</button>
+    </mat-step>
+    <mat-step>
+       <ng-template matStepLabel>P3</ng-template>
+       <app-disposition-p3></app-disposition-p3>
+       <button mat-raised-button color="primary" matStepperPrevious>{{ 'previous' | translate }}</button>
+       <button mat-raised-button color="primary" matStepperNext>{{ 'next' | translate }}</button>
+    </mat-step>
+    <mat-step>
+      <ng-template matStepLabel>{{ 'disposition.multipleUseParts' | translate }}</ng-template>
+      <app-multiple-use-parts></app-multiple-use-parts>
+      <button mat-raised-button color="primary" matStepperPrevious>{{ 'previous' | translate }}</button>
+   </mat-step>
+  </mat-vertical-stepper>

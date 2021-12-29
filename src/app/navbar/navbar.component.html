@@ -1,0 +1,23 @@
+<mat-toolbar color="primary">
+  <span class="menu-spacer"></span>
+  <mat-toolbar-row>
+    <a mat-button [routerLink]="'/index'" routerLinkActive="active"><h1 style="color: white;"><img src="assets/pictures/PPT_header.png" width="100" style="padding-right: 20px;">{{ 'navbar.productionPlanningTool' | translate }}</h1></a>
+    <div>
+      <a mat-button [routerLink]="'/file-upload'" routerLinkActive="active">Tool</a>
+      <a mat-button [routerLink]="'/dashboard'" routerLinkActive="active">Dashboard</a>
+      <a mat-button [routerLink]="'/tutorial'" routerLinkActive="active">Tutorial</a>
+    </div>
+    <span style="flex: 1 1 auto"></span>
+    <div>
+      <button mat-button [matMenuTriggerFor]="menu" style="color: white;">
+        <mat-icon class="material-icons-outlined">language</mat-icon>
+        {{ siteLanguage }}
+        <mat-icon class="material-icons-outlined">arrow_drop_down</mat-icon>
+      </button>
+      <mat-menu  #menu="matMenu">
+        <button mat-menu-item (click)="changeSiteLanguage('de')">{{ "navbar.german" | translate }}</button>
+        <button mat-menu-item (click)="changeSiteLanguage('en')">{{ "navbar.english" | translate }}</button>
+      </mat-menu>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>

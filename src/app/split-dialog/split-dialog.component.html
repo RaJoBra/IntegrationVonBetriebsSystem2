@@ -1,0 +1,13 @@
+<h1 mat-dialog-title>{{ 'manufacturingSequence.splitAnOrder' | translate }}</h1>
+<div mat-dialog-content>
+  {{ 'manufacturingSequence.article' | translate }}: {{ this.articleId }} <br>
+  {{ 'manufacturingSequence.currentOrderQuantity' | translate }}: {{ this.oldOrderAmount }} <br>
+  {{ 'manufacturingSequence.newOrderQuantity' | translate }}:
+  <mat-form-field mat-form-field appearance="fill">
+    <input matInput type="number" min="0" max="{{this.initialAmount-1}}" step="10" [(ngModel)]="newOrderAmount" (ngModelChange)="updateAmount()">
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">{{ 'Cancel' | translate }}</button>
+  <button mat-button [mat-dialog-close]="newOrderAmount" cdkFocusInitial>OK</button>
+</div>

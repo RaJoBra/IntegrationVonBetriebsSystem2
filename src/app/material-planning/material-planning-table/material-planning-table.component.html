@@ -1,0 +1,280 @@
+<div id="container-table">
+  <table
+    mat-table
+    [dataSource]="dataSource"
+    multiTemplateDataRows
+    class="mat-elevation-z8"
+  >
+    <!-- Position Column -->
+    <ng-container matColumnDef="article">
+      <th mat-header-cell *matHeaderCellDef sticky="true">
+        {{ "materialPlanning.article" | translate }}
+      </th>
+      <td mat-cell *matCellDef="let element">{{ element.article }}</td>
+    </ng-container>
+
+    <!-- Position Column -->
+    <ng-container matColumnDef="discount">
+      <th mat-header-cell *matHeaderCellDef>
+        {{ "materialPlanning.discountQuantity" | translate }}
+      </th>
+      <td mat-cell *matCellDef="let element">{{ element.discount }}</td>
+    </ng-container>
+    <!-- Position Column -->
+    <ng-container matColumnDef="price">
+      <th mat-header-cell *matHeaderCellDef>
+        {{ "materialPlanning.pricePerArticle" | translate }}
+      </th>
+      <td mat-cell *matCellDef="let element">
+        {{ element.price | currency: "EUR" }}
+      </td>
+    </ng-container>
+
+    <!-- Position Column -->
+    <ng-container matColumnDef="currentStock">
+      <th mat-header-cell *matHeaderCellDef>
+        {{ "materialPlanning.currentStock" | translate }}
+      </th>
+      <td
+        mat-cell
+        *matCellDef="let element"
+        [ngClass]="{ 'make-gold': element.currentStock == 0 }"
+      >
+        {{ element.currentStock + element.ordersPeriodN +       element.ordersPeriodNE}}
+      </td>
+    </ng-container>
+
+    <!-- Position Column -->
+    <ng-container matColumnDef="currentConsumption">
+      <th mat-header-cell *matHeaderCellDef>
+        {{ "materialPlanning.currentConsumption" | translate }}
+      </th>
+      <td
+        mat-cell
+        *matCellDef="let element"
+        [ngClass]="{
+          'make-gold':
+            element.currentConsumption >
+            element.currentStock +
+              element.ordersPeriodN +
+              element.ordersPeriodNE
+        }"
+      >
+        {{
+          element.currentConsumption 
+        }}
+      </td>
+    </ng-container>
+
+    <!-- Position Column -->
+    <ng-container matColumnDef="forecastn1">
+      <th mat-header-cell *matHeaderCellDef>
+        {{ "materialPlanning.forecastOfConsumptionUntilPeriod" | translate }}
+        {{ period + 1 }}
+      </th>
+      <td
+        mat-cell
+        *matCellDef="let element"
+        [ngClass]="{
+          'make-gold':
+            0 >
+            element.currentStock +
+              element.ordersPeriodN +
+              element.ordersPeriodNE +
+              element.ordersPeriodN1 +
+              element.ordersPeriodN1E -
+              element.currentConsumption -
+              element.forecastn1
+        }"
+      >
+        {{
+          element.currentStock +
+            element.ordersPeriodN +
+            element.ordersPeriodNE +
+            element.ordersPeriodN1 +
+            element.ordersPeriodN1E -
+            element.currentConsumption -
+            element.forecastn1
+        }}
+      </td>
+    </ng-container>
+
+    <!-- Position Column -->
+    <ng-container matColumnDef="forecastn2">
+      <th mat-header-cell *matHeaderCellDef>
+        {{ "materialPlanning.forecastOfConsumptionUntilPeriod" | translate }}
+        {{ period + 2 }}
+      </th>
+      <td
+        mat-cell
+        *matCellDef="let element"
+        [ngClass]="{
+          'make-gold':
+            0 >
+            element.currentStock +
+              element.ordersPeriodN +
+              element.ordersPeriodNE +
+              element.ordersPeriodN1E +
+              element.ordersPeriodN2E +
+              element.ordersPeriodN1 +
+              element.ordersPeriodN2 -
+              element.currentConsumption -
+              element.forecastn1 -
+              element.forecastn2
+        }"
+      >
+        {{
+          element.currentStock +
+            element.ordersPeriodN +
+            element.ordersPeriodNE +
+            element.ordersPeriodN1E +
+            element.ordersPeriodN2E +
+            element.ordersPeriodN1 +
+            element.ordersPeriodN2 -
+            element.currentConsumption -
+            element.forecastn1 -
+            element.forecastn2
+        }}
+      </td>
+    </ng-container>
+
+    <!-- Position Column -->
+    <ng-container matColumnDef="forecastn3">
+      <th mat-header-cell *matHeaderCellDef>
+        {{ "materialPlanning.forecastOfConsumptionUntilPeriod" | translate }}
+        {{ period + 3 }} 
+      </th>
+      <td
+        mat-cell
+        *matCellDef="let element"
+        [ngClass]="{
+          'make-gold':
+            0 >
+            element.currentStock +
+              element.ordersPeriodN +
+              element.ordersPeriodNE +
+              element.ordersPeriodN1E +
+              element.ordersPeriodN2E +
+              element.ordersPeriodN3E +
+              element.ordersPeriodN1 +
+              element.ordersPeriodN3 +
+              element.ordersPeriodN2 -
+              element.currentConsumption -
+              element.forecastn1 -
+              element.forecastn2 -
+              element.forecastn3
+        }"
+      >
+        {{
+          element.currentStock +
+            element.ordersPeriodN +
+            element.ordersPeriodN1 +
+            element.ordersPeriodN2 +
+            element.ordersPeriodNE +
+            element.ordersPeriodN1E +
+            element.ordersPeriodN2E +
+            element.ordersPeriodN3E +
+            element.ordersPeriodN3 -
+            element.currentConsumption -
+            element.forecastn1 -
+            element.forecastn3 -
+            element.forecastn2
+        }}
+      </td>
+    </ng-container>
+    <!-- Expanded Content Column - The detail row is made up of this one column that spans across all columns -->
+    <ng-container matColumnDef="expandedDetail">
+      <td
+        mat-cell
+        *matCellDef="let element"
+        [attr.colspan]="columnsToDisplay.length"
+      >
+        <div
+          class="example-element-detail"
+          [@detailExpand]="
+            element == expandedElement ? 'expanded' : 'collapsed'
+          "
+        >
+          <table id="table-in-table">
+            <tr>
+              <th>{{ "materialPlanning.orderMode" | translate }}</th>
+              <th>{{ "materialPlanning.deliveryTime" | translate }}</th>
+              <th>{{ "materialPlanning.variance" | translate }}</th>
+              <th>{{ "materialPlanning.orderCosts" | translate }}</th>
+              <th>{{ "materialPlanning.orderQuantity" | translate }}</th>
+              <th>{{ "materialPlanning.totalCosts" | translate }}</th>
+            </tr>
+            <tr>
+              <td>{{ "materialPlanning.normal" | translate }}</td>
+              <td>{{ element.deliveryTimeN }}</td>
+              <td>{{ element.variance }}</td>
+              <td>{{ element.orderCosts | currency: "EUR" }}</td>
+              <td>
+                <form-field mat-form-field appearance="fill">
+                  <input
+                    matInput
+                    type="number"
+                    min="0"
+                    step="10"
+                    [(ngModel)]="element.orderQuantity"
+                    (ngModelChange)="updateOrderQuantity(element)"
+                  />
+                </form-field>
+              </td>
+              <td>{{ element.gesamtkosten | currency: "EUR" }}</td>
+            </tr>
+            <tr>
+              <td>{{ "materialPlanning.fast" | translate }}</td>
+              <td>{{ element.deliveryTimeE }}</td>
+              <td>-</td>
+
+              <td>{{ element.orderCosts * 10 | currency: "EUR" }}</td>
+              <td>
+                <form-field mat-form-field appearance="fill">
+                  <input
+                    matInput
+                    type="number"
+                    min="0"
+                    step="10"
+                    [(ngModel)]="element.orderQuantityE"
+                    (ngModelChange)="updateOrderQuantityE(element)"
+                  />
+                </form-field>
+              </td>
+              <td style="max-width: 50px">
+                {{ element.gesamtkostenE | currency: "EUR" }}
+              </td>
+            </tr>
+          </table>
+        </div>
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="columnsToDisplay; sticky: true"></tr>
+    <tr
+      mat-row
+      *matRowDef="let element; columns: columnsToDisplay"
+      class="example-element-row"
+      [class.example-expanded-row]="expandedElement === element"
+      (click)="expandedElement = expandedElement === element ? null : element"
+    ></tr>
+    <tr
+      mat-row
+      *matRowDef="let row; columns: ['expandedDetail']"
+      class="example-detail-row"
+    ></tr>
+  </table>
+
+  <!-- HTML code for the view of the spinner -->
+  <ngx-spinner
+    bdColor="rgba(0, 0, 0, 0.8)"
+    size="large"
+    color="#3f51b5"
+    type="ball-spin-clockwise"
+    [fullScreen]="true"
+  >
+    <p style="color: white; margin-top: 50px">
+      {{ "upload.spinner" | translate }}
+    </p>
+  </ngx-spinner>
+</div>

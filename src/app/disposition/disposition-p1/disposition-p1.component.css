@@ -1,0 +1,75 @@
+.make-gold {
+  color: rgb(255, 0, 0)!important;
+}
+
+.full-width-table {
+  width: 95%;
+  margin: 50px;
+}
+
+/*
+Table
+ */
+
+.mat-row:nth-child(even) {
+  background-color: white;
+}
+
+.mat-row:nth-child(odd) {
+  background-color: #f3f3f3;
+}
+
+.mat-header-cell {
+  color: white;
+}
+
+tr.mat-header-row {
+  background: #3f51b5;
+  color: #ffffff;
+  text-align: center;
+}
+
+.mat-table {
+  border-collapse: collapse;
+
+  margin: 50px 50px 100px 50px;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+}
+
+.mat-table thead tr {
+  background: #3f51b5;
+  color: #ffffff;
+  text-align: center;
+}
+
+.mat-table th,
+.mat-table td {
+  padding: 12px 15px;
+}
+
+.mat-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.mat-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.mat-table tbody tr:last-of-type {
+  border-bottom: 2px solid #3f51b5;
+}
+
+mat-cell:last-child,
+mat-footer-cell:last-child,
+mat-header-cell:last-child {
+  border-bottom: 2px solid #3f51b5;
+}
+
+.mat-table tbody tr.active-row {
+  font-weight: normal;
+}

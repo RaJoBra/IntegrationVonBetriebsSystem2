@@ -1,0 +1,32 @@
+.make-red {
+  background-color: rgb(255, 160, 160)!important;
+}
+
+table {
+
+  align-items: center;
+  justify-content: center;
+
+}
+
+.mat-table {
+  border-collapse: collapse;
+  
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+}
+
+.warning {
+  margin-top: 25px;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 16px;
+}

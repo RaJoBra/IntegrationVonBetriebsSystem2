@@ -1,0 +1,91 @@
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8" > 
+    <!--- Note that these columns can be defined in any order.
+          The actual rendered columns are set as a property on the row definition" -->
+
+    <!-- Position Column -->
+    <ng-container matColumnDef="article">
+      <th mat-header-cell *matHeaderCellDef>{{ 'materialPlanning.article' | translate }}</th>
+      <td mat-cell *matCellDef="let element"> {{element.article}} </td>
+    </ng-container>
+
+    <!-- Name Column -->
+    <ng-container matColumnDef="deliveryTime">
+      <th mat-header-cell *matHeaderCellDef>{{ 'materialPlanning.deliveryTime' | translate }}</th>
+      <td mat-cell *matCellDef="let element"> {{element.deliveryTime}} </td>
+    </ng-container>
+
+    <!-- Weight Column -->
+    <ng-container matColumnDef="deviation">
+      <th mat-header-cell *matHeaderCellDef>{{ 'materialPlanning.variance' | translate }}</th>
+      <td mat-cell *matCellDef="let element"> {{element.deviation}} </td>
+    </ng-container>
+
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="discountQuantity">
+      <th mat-header-cell *matHeaderCellDef>{{ 'materialPlanning.discountQuantity' | translate }}</th>
+      <td mat-cell *matCellDef="let element"> {{element.discountQuantity}} </td>
+    </ng-container>
+
+    <!-- Product Column -->
+    <ng-container matColumnDef="price">
+      <th mat-header-cell *matHeaderCellDef>{{ 'materialPlanning.pricePerArticle' | translate }}</th>
+      <!-- TODO: Währung kann so gesetzt werden: {{element.price | currency: 'EUR' }} -->
+      <td mat-cell *matCellDef="let element"> {{element.price}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="orderCosts">
+      <th mat-header-cell *matHeaderCellDef>{{ 'materialPlanning.orderCosts' | translate }}</th>
+      <!-- TODO: Währung kann so gesetzt werden: {{element.orderCosts | currency: 'EUR' }} -->
+      <td mat-cell *matCellDef="let element"> ${{element.orderCosts}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="currentStock">
+      <th mat-header-cell *matHeaderCellDef>{{ 'materialPlanning.currentStock' | translate }}</th>
+      <td mat-cell *matCellDef="let element"> {{element.currentStock}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="currentRequirements">
+      <th mat-header-cell *matHeaderCellDef>{{ 'materialPlanning.currentConsumption' | translate }}</th>
+      <td mat-cell *matCellDef="let element"> {{element.currentRequirements}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="forecastRequirementsN1">
+      <th mat-header-cell *matHeaderCellDef>{{ 'materialPlanning.forecastOfConsumptionUntilPeriod' | translate }} n+1</th>
+      <td mat-cell *matCellDef="let element"> {{element.forecastRequirementsN1}} </td>
+    </ng-container>
+    <ng-container matColumnDef="forecastRequirementsN2">
+      <th mat-header-cell *matHeaderCellDef>{{ 'materialPlanning.forecastOfConsumptionUntilPeriod' | translate }} n+2</th>
+      <td mat-cell *matCellDef="let element"> {{element.forecastRequirementsN2}} </td>
+    </ng-container>
+    <ng-container matColumnDef="forecastRequirementsN3">
+      <th mat-header-cell *matHeaderCellDef>{{ 'materialPlanning.forecastOfConsumptionUntilPeriod' | translate }} n+3</th>
+      <td mat-cell *matCellDef="let element"> {{element.forecastRequirementsN3}} </td>
+    </ng-container>
+
+
+    <ng-container matColumnDef="orderQuantity">
+      <th mat-header-cell *matHeaderCellDef>{{ 'materialPlanning.orderQuantity' | translate }} n</th>
+      <td mat-cell *matCellDef="let element">       <input class="form-control" type="number" value="{{element.orderQuantity}}" step="10"> </td>
+    </ng-container>
+
+    <ng-container matColumnDef="orderType">
+      <th mat-header-cell *matHeaderCellDef>{{ 'materialPlanning.orderMode' | translate }}</th>
+      <td mat-cell *matCellDef="let element">
+
+        <mat-form-field appearance="fill">
+          <mat-label>{{ 'materialPlanning.orderMode' | translate }}</mat-label>
+          <mat-select>
+            <mat-option *ngFor="let orderTypes2 of orderTypes2" [value]="orderTypes2.value">
+              {{ orderTypes2.viewValue | translate }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+
+

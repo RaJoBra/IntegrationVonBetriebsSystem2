@@ -1,0 +1,8 @@
+<h2 mat-dialog-title>{{ 'upload.fileType' | translate }}</h2>
+<mat-dialog-content class="mat-typography">
+  <p>{{ 'upload.incompatible' | translate:{value: data.type} }}</p>
+  <p>{{ 'upload.xml' | translate }}</p>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>OK</button>
+</mat-dialog-actions>

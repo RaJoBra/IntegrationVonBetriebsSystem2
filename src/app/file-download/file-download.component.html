@@ -1,0 +1,9 @@
+<app-process-navbar></app-process-navbar>
+<div class="file-download-container">
+  <a mat-raised-button color="primary" [href]="fileUrl" download="input.xml" target="_blank">{{ 'download.button' | translate }}</a>
+</div>
+
+<!-- HTML code for the view of the spinner -->
+<ngx-spinner bdColor="rgba(0, 0, 0, 0.8)" size="large" color="#3f51b5" type="ball-spin-clockwise" [fullScreen]="true">
+  <p style="color: white; margin-top: 50px; font-size: 16px; font-weight: bold">{{ 'upload.spinner' | translate }}</p>
+</ngx-spinner>

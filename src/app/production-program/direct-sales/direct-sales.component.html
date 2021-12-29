@@ -1,0 +1,43 @@
+<table mat-table [dataSource]="dataSource" class="styled-table">
+    <!--- Note that these columns can be defined in any order.
+          The actual rendered columns are set as a property on the row definition" -->
+
+    <!-- Product Column -->
+    <ng-container matColumnDef="product">
+      <th mat-header-cell *matHeaderCellDef>{{ 'productionProgram.product' | translate }}</th>
+      <td mat-cell *matCellDef="let element"> {{element.product}} </td>
+    </ng-container>
+
+    <!-- Quantity Column -->
+    <ng-container matColumnDef="quantity">
+      <th mat-header-cell *matHeaderCellDef>{{ 'productionProgram.quantity' | translate }}</th>
+      <td mat-cell *matCellDef="let element">
+        <form-field mat-form-field appearance="fill">
+          <input matInput type="number" min="0" step="10" [(ngModel)]="element.quantity" (ngModelChange)="updateDirectSaleInDatabase(element)">
+        </form-field>
+      </td>
+    </ng-container>
+
+    <!-- Price Column -->
+    <ng-container matColumnDef="price">
+      <th mat-header-cell *matHeaderCellDef>{{ 'productionProgram.price' | translate }}</th>
+      <td mat-cell *matCellDef="let element">
+        <form-field mat-form-field appearance="fill">
+          <input matInput type="number" min="0" [(ngModel)]="element.price" (ngModelChange)="updateDirectSaleInDatabase(element)">
+        </form-field>
+      </td>
+    </ng-container>
+
+    <!-- Penalty Column -->
+    <ng-container matColumnDef="penalty">
+      <th mat-header-cell *matHeaderCellDef>{{ 'productionProgram.penalty' | translate }}</th>
+      <td mat-cell *matCellDef="let element">
+        <form-field mat-form-field appearance="fill">
+          <input matInput type="number" min="0" [(ngModel)]="element.penalty" (ngModelChange)="updateDirectSaleInDatabase(element)">
+        </form-field>
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>

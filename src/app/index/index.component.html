@@ -1,0 +1,183 @@
+<div id="hero">
+  <div id="picture-background" class="container">
+    <div class="row">
+      <div class="col-8">
+        <h1 class="display-4" style="padding-top: 100px; ">
+          {{ "home.heading" | translate }}
+        </h1>
+        <p id="hero-text" style="padding-top: 30px;">
+          {{ "home.text" | translate }}
+        </p>
+        <div
+          class="btns"
+          style="display: inline-block; padding-top: 40px;"
+        >
+          <a
+            align="middle"
+            [routerLink]="'/file-upload'"
+            routerLinkActive="active"
+            >{{ "home.button" | translate }}</a
+          >
+        </div>
+        <div
+          class="btns2"
+          style="display: inline-block; padding-top: 40px; "
+        >
+          <a
+            align="middle"
+            [routerLink]="'/dashboard'"
+            routerLinkActive="active"
+            >{{ "home.dashboard" | translate }}</a
+          >
+        </div>
+      </div>
+      <div class="col-4">
+        <div ></div>
+        <img src="assets/pictures/PPT.png" style="padding-top: 80px;" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<div style="display: flex; align-items: center; justify-content: center">
+  <div class="d-flex p-2">
+    <div class="container d-flex p-2">
+      <div>
+        <a
+          href="https://github.com/IcyLux/ProduktionsplanungsTool"
+          target="_blank"
+          style="text-decoration: none; color: black"
+        >
+          <div>
+            <div class="site-wrapper">
+              <div class="item-wrapper">
+                <div class="line line-top">
+                  <span></span>
+                </div>
+                <div class="line line-right">
+                  <span></span>
+                </div>
+                <div class="line line-bottom">
+                  <span></span>
+                </div>
+                <div class="line line-left">
+                  <span></span>
+                </div>
+                <div class="item row">
+                  <h2 style="padding-top: 15px" class="col-8">
+                    SOURCE <span class="title"><br />CODE</span> <br /><span
+                      class="title"
+                    ></span>
+                  </h2>
+                  <a
+                    style="
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                    "
+                    width="120"
+                    height="120"
+                    class="col-2"
+                    ><img
+                      src="assets/img/GitHub-Mark-120px-plus.png"
+                      width="120"
+                      height="120"
+                  /></a>
+                  <p class="item col-12">
+                    {{ "home.github" | translate }}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div></a
+        >
+      </div>
+      <div class="col-4">
+        <a
+          [routerLink]="'/tutorial'"
+          target="_blank"
+          style="text-decoration: none; color: black"
+        >
+          <div class="site-wrapper">
+            <div class="item-wrapper">
+              <div class="line line-top">
+                <span></span>
+              </div>
+              <div class="line line-right">
+                <span></span>
+              </div>
+              <div class="line line-bottom">
+                <span></span>
+              </div>
+              <div class="line line-left">
+                <span></span>
+              </div>
+              <div class="item row">
+                <h2 style="padding-top: 15px" class="col-9">
+                  TUTORIAL <br /><span class="title"> VIDEOS</span>
+                </h2>
+                <a
+                  style="
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                  "
+                  class="col-2"
+                  ><img
+                    src="assets/img/video-player.png"
+                    width="120"
+                    height="120"
+                /></a>
+                <p>{{ "home.tutorial" | translate }}</p>
+              </div>
+            </div>
+          </div></a
+        >
+      </div>
+      <div class="col-4">
+        <a
+          [routerLink]="'/manual'"
+          target="_blank"
+          style="text-decoration: none; color: black"
+        >
+          <div class="site-wrapper">
+            <div class="item-wrapper">
+              <div class="line line-top">
+                <span></span>
+              </div>
+              <div class="line line-right">
+                <span></span>
+              </div>
+              <div class="line line-bottom">
+                <span></span>
+              </div>
+              <div class="line line-left">
+                <span></span>
+              </div>
+
+              <div class="item row">
+                <h2 style="padding-top: 15px" class="col-9">
+                  SYSTEM <br /><span class="title">
+                    {{ "home.systemManual" | translate }}</span
+                  >
+                </h2>
+                <a
+                  style="
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                  "
+                  class="col-2"
+                  ><img src="assets/img/manual.png" width="120" height="120"
+                /></a>
+                <p>
+                  {{ "home.manualText" | translate }}
+                </p>
+              </div>
+            </div>
+          </div></a
+        >
+      </div>
+    </div>
+  </div>
+</div>
