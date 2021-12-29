@@ -21,14 +21,11 @@
     "continue": "Bevor diese Fehler nicht verbessert wurden können Sie nicht weiter machen."
   },
   "home": {
-    "heading": "Herzlich Willkommen",
+    "heading": "Production Wizzard",
     "text": "Ihre Software für optimale Planung und Organisation.",
     "button": "Planung starten",
-    "dashboard": "Stammdaten",
-    "github": "Open Source erlaubt Ihnen den tiefst möglichen Einblick in unser System und seine Funktionalität. Sollten Sie Verbesserungsvorschläge haben oder Bugs finden, nutzen Sie den Issue Tracker.",
-    "tutorial": "Hier finden Sie Tutorial-Videos zu den verschiedenen Aspekten und Funktionen des Systems. Von einer generellen Einführung bis zu einem beispielhaften Planungsprozess bieten wir dem Nutzer alles um sich effizient in das System einzuarbeiten.",
-    "manualText": "Sollten Ihnen die Tutorialvideos nicht ausreichen, oder wenn Sie einen tieferen Einblick in die gebotene Funktionalität erhalten wollen, finden Sie hier genau was Sie suchen. Im Handbuch werden alle Features und Funktionalitäten detailliert beschrieben zusammen mit Erklärungen zu Technologie und Datenberechnung.",
-    "systemManual": "HANDBUCH"
+    "dashboard": "Stammdaten"
+
   },
   "upload": {
     "button": "Datei auswählen",
@@ -121,12 +118,8 @@
     "staticData": "Stammdaten",
     "conditionalData": "Periodenspezifische Daten"
   },
-  "tutorial": {
-    "video1Headline": "Kennenlernen des Production Wizzards",
-    "video2Headline": "Beispielhafter Planungsprozess",
-    "video1Subtext": "In diesem Tutorial bekommen Sie den grundsätzlichen Umgang mit dem Planungtool gezeigt. ",
-    "video2Subtext": "In diesem Video sehen Sie einen beispielhaften Planungsprozess."
-  },
+ 
+
   "dynamicData": {
     "futureInwardStockMovement": "Zukünftiger Lagereingang",
     "article": "Artikel",

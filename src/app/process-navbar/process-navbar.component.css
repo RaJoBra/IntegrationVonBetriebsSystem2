@@ -9,13 +9,13 @@
 
 /*.mat-focus-indicator.mat-button.mat-button-base.active {
     color: rgb(255, 255, 255);
-    background-color: #3f51b5;
+    background-color: #532e7d;
     border-radius: 0px;
 }*/
 
 .mat-focus-indicator, .mat-button {
     color: rgb(255, 255, 255);
-    background-color: #3f51b5;
+    background-color: #532e7d;
     border-radius: 0px;
 }
 
