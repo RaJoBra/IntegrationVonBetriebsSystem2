@@ -6,7 +6,7 @@
   "yes": "Ja",
   "no": "Nein",
   "navbar": {
-    "productionPlanningTool": "Produktionsplanungstool",
+    "productionPlanningTool": "Production Wizzard",
     "upload": "XML hochladen",
     "productionProgram": "Produktionsprogramm",
     "disposition": "Disposition",
@@ -122,7 +122,7 @@
     "conditionalData": "Periodenspezifische Daten"
   },
   "tutorial": {
-    "video1Headline": "Kennenlernen des Produktionsplanungstools",
+    "video1Headline": "Kennenlernen des Production Wizzards",
     "video2Headline": "Beispielhafter Planungsprozess",
     "video1Subtext": "In diesem Tutorial bekommen Sie den grundsätzlichen Umgang mit dem Planungtool gezeigt. ",
     "video2Subtext": "In diesem Video sehen Sie einen beispielhaften Planungsprozess."
