@@ -64,7 +64,7 @@ button:focus:not(:focus-visible) {
   text-align: right;
 }
 .dropdown-toggle::after {
-  color: #3f51b5;
+  color: #532e7d;
 }
 
 .background {
@@ -103,7 +103,7 @@ button:focus:not(:focus-visible) {
   box-shadow: 0 0 0 0.25rem white;
 }
 .btn-secondary:hover {
-  color: #3f51b5;
+  color: #532e7d;
   background-color: white;
   border-color: white;
   border-top-color: white;

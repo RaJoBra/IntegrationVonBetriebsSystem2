@@ -7,7 +7,7 @@ import {TranslateService} from '@ngx-translate/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ProduktionsplanungsTool';
+  title = 'Production Wizzard';
 
   constructor(private translate: TranslateService) {
     translate.setDefaultLang('de');
