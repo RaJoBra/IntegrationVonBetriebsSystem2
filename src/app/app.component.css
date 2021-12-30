@@ -32,7 +32,7 @@ tr.mat-header-row {
 
 .mat-table th,
 .mat-table td {
-  padding: 12px 15px;
+  padding: 14px 17px;
 }
 
 .mat-table tbody tr {
@@ -44,13 +44,13 @@ tr.mat-header-row {
 }
 
 .mat-table tbody tr:last-of-type {
-  border-bottom: 2px solid #532e7d;
+  border-bottom: 4px solid #532e7d;
 }
 
 mat-cell:last-child,
 mat-footer-cell:last-child,
 mat-header-cell:last-child {
-  border-bottom: 2px solid #532e7d;
+  border-bottom: 4px solid #532e7d;
 }
 
 .mat-table tbody tr.active-row {
