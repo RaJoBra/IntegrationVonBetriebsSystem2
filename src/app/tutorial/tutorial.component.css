@@ -74,22 +74,22 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     overflow: hidden;
-    color: #3f51b5;
+    color: #532e7d;
   
-    border: 3px solid #3f51b5!important;
+    border: 3px solid #532e7d!important;
   }
   
   .btns a:last-child {
-    background: linear-gradient(90deg, #3f51b5, #3f51b5);
+    background: linear-gradient(90deg, #532e7d, #532e7d);
   }
   
   .btns a:hover {
-    background: linear-gradient(90deg, #7686dd, #3f51b5);
+    background: linear-gradient(90deg, #7686dd, #532e7d);
   }
   
   .btns2 a:last-child {
     background: linear-gradient(90deg, #f6f6f6, #f6f6f6);
-    border: #3f51b5 2px;
+    border: #532e7d 2px;
   }
   
   .btns2 a:hover {
@@ -124,7 +124,7 @@
   }
   
   .item-wrapper .line {
-    background-color: #3f51b5!important;
+    background-color: #532e7d!important;
     position: absolute;
   }
   
@@ -199,7 +199,7 @@
     line-height: 40px;
   }
   .item-wrapper > .item > h2 .title{
-    color: #3f51b5 !important;
+    color: #532e7d !important;
     font-weight: 800;
   }
   .item-wrapper > .item > p{

@@ -6,7 +6,7 @@
   "yes": "Yes",
   "no": "No",
   "navbar": {
-    "productionPlanningTool": "Production Planning Tool",
+    "productionPlanningTool": "Production Wizzard",
     "german": "German",
     "english": "English",
     "upload": "Upload XML",
@@ -21,14 +21,11 @@
     "continue": "Until these errors are improved you can not continue."
   },
   "home": {
-    "heading": "Welcome to our website",
-    "text": "Your system for optimized planning and organisation",
+    "heading": "Production Wizzard",
+    "text": "Production Planning Reinvented",
     "button": "Start planning",
-    "dashboard": "Production data",
-    "github":"Open Source allows for an in-depth insight into the inner working of our system. To report bugs and suggest features use the the issue tracker.",
-    "tutorial": "Here you can find videos explaining the features and functionality of our system. Starting with a generell introduction leading all the way through to an exemplary planning process providing the user with everything to be up-to-speed as fast as possible.",
-    "manualText": "Should the information provided in the tutorial videos not be enough for you, than look no further than our manual. Here all features and functionality and described in detail in addition to explaining the technology used and the way data is processed.",
-    "systemManual": "MANUAL"
+    "dashboard": "Production data"
+
   },
   "upload": {
     "button": "Choose file",
@@ -120,12 +117,7 @@
   "dashboard": {
     "staticData": "Static data",
     "conditionalData": "Conditional data"
-  },
-  "tutorial": {
-    "video1Headline": "Getting to know the production planning tool",
-    "video2Headline": "Exemplary planning process",
-    "video1Subtext": "This tutorial shows you the basic handling of the planning tool.",
-    "video2Subtext": "In this video you can see an exemplary planning process."
+
   },
   "dynamicData": {
     "futureInwardStockMovement": "Future inward stock movement",

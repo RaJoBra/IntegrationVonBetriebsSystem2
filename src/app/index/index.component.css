@@ -1,9 +1,8 @@
-@font-face {
-  font-family: Pattaya;
-  src: url(../../assets/font/Pattaya-Regular.ttf);
-}
+
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+
 h1 {
-  font-family: 'Pattaya', sans-serif;
+  font-family: 'Oxygen', sans-serif;
   font-size: 70px;
 }
 
@@ -75,22 +74,22 @@ h1 {
   text-transform: uppercase;
   letter-spacing: 1px;
   overflow: hidden;
-  color: #3f51b5;
+  color: #532e7d;
 
-  border: 3px solid #3f51b5!important;
+  border: 3px solid #532e7d!important;
 }
 
 .btns a:last-child {
-  background: linear-gradient(90deg, #3f51b5, #3f51b5);
+  background: linear-gradient(90deg, #532e7d, #532e7d);
 }
 
 .btns a:hover {
-  background: linear-gradient(90deg, #7686dd, #3f51b5);
+  background: linear-gradient(90deg, #7686dd, #532e7d);
 }
 
 .btns2 a:last-child {
   background: linear-gradient(90deg, #f6f6f6, #f6f6f6);
-  border: #3f51b5 2px;
+  border: #532e7d 2px;
 }
 
 .btns2 a:hover {
@@ -125,7 +124,7 @@ body {
 }
 
 .item-wrapper .line {
-  background-color: #3f51b5!important;
+  background-color: #532e7d!important;
   position: absolute;
 }
 
@@ -200,7 +199,7 @@ body {
   line-height: 40px;
 }
 .item-wrapper > .item > h2 .title{
-  color: #3f51b5 !important;
+  color: #532e7d !important;
   font-weight: 800;
 }
 .item-wrapper > .item > p{
