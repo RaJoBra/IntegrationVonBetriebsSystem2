@@ -6,6 +6,9 @@
   "yes": "Yes",
   "no": "No",
   "navbar": {
+    "start": "Start",
+    "manual": "Manual",
+    "dashboard": "Production Data",
     "productionPlanningTool": "Production Wizzard",
     "german": "German",
     "english": "English",
@@ -25,7 +28,6 @@
     "text": "Production Planning Reinvented",
     "button": "Start planning",
     "dashboard": "Production data"
-
   },
   "upload": {
     "button": "Choose file",
@@ -117,7 +119,6 @@
   "dashboard": {
     "staticData": "Static data",
     "conditionalData": "Conditional data"
-
   },
   "dynamicData": {
     "futureInwardStockMovement": "Future inward stock movement",

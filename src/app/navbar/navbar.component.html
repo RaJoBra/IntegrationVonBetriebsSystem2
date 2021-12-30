@@ -1,23 +1,41 @@
 <mat-toolbar color="primary" style="height: 75px">
   <span class="menu-spacer"></span>
   <mat-toolbar-row>
-    <a mat-button [routerLink]="'/index'" routerLinkActive="active"><h1 style="color: white;"><img src="assets/pictures/JBGB_Logo_Header.png" width="100" style="padding-right: 20px;">{{ 'navbar.productionPlanningTool' | translate }}</h1></a>
+    <a mat-button [routerLink]="'/index'" routerLinkActive="active"
+      ><h1 style="color: white">
+        <img
+          src="assets/pictures/JBGB_Logo_Header.png"
+          width="100"
+          style="padding-right: 20px"
+        />{{ "navbar.productionPlanningTool" | translate }}
+      </h1></a
+    >
 
     <span style="flex: 1 1 auto"></span>
     <div>
-      <a mat-button [routerLink]="'/file-upload'" routerLinkActive="active">Start</a>
-      <a mat-button [routerLink]="'/dashboard'" routerLinkActive="active">Dashboard</a>
-      <a mat-button [routerLink]="'/manual'" routerLinkActive="active">Handbuch</a>
+      <a mat-button [routerLink]="'/file-upload'" routerLinkActive="active">{{
+        "navbar.start" | translate
+      }}</a>
+      <a mat-button [routerLink]="'/dashboard'" routerLinkActive="active">{{
+        "navbar.dashboard" | translate
+      }}</a>
+      <a mat-button [routerLink]="'/manual'" routerLinkActive="active">{{
+        "navbar.manual" | translate
+      }}</a>
     </div>
     <div>
-      <button mat-button [matMenuTriggerFor]="menu" style="color: white;">
+      <button mat-button [matMenuTriggerFor]="menu" style="color: white">
         <mat-icon class="material-icons-outlined">language</mat-icon>
         {{ siteLanguage }}
         <mat-icon class="material-icons-outlined">arrow_drop_down</mat-icon>
       </button>
-      <mat-menu  #menu="matMenu">
-        <button mat-menu-item (click)="changeSiteLanguage('de')">{{ "navbar.german" | translate }}</button>
-        <button mat-menu-item (click)="changeSiteLanguage('en')">{{ "navbar.english" | translate }}</button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item (click)="changeSiteLanguage('de')">
+          {{ "navbar.german" | translate }}
+        </button>
+        <button mat-menu-item (click)="changeSiteLanguage('en')">
+          {{ "navbar.english" | translate }}
+        </button>
       </mat-menu>
     </div>
   </mat-toolbar-row>

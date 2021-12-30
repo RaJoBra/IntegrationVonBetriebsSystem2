@@ -6,6 +6,9 @@
   "yes": "Ja",
   "no": "Nein",
   "navbar": {
+    "start": "Start",
+    "manual": "Handbuch",
+    "dashboard": "Stammdaten",
     "productionPlanningTool": "Production Wizzard",
     "upload": "XML hochladen",
     "productionProgram": "Produktionsprogramm",
@@ -105,7 +108,7 @@
     "fast": "Eil",
     "totalCosts": "Gesamtkosten",
     "consumption": "Verbrauch"
-      },
+  },
   "download": {
     "button": "Datei herunterladen"
   },
