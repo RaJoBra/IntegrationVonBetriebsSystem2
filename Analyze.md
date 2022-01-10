@@ -35,6 +35,7 @@
 ### Prodktionprogramm
 
 - "Perioden n+1..3) -> Prognosen für künftige Perioden eintragen
+- Langsam eintragen sonst kommt es zu fehlern in der Berechnung
 - Verkaufswunsch, Lagerbestand für P1..P3 werden aus der xml ausgelesen
 - Geplanter Sicherheitsbestand n+1
   - Wieviel Fahräderr sollen anfang der nächsten Periode im Lager sein
