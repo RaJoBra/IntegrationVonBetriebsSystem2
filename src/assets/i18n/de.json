@@ -36,7 +36,7 @@
   "upload": {
     "stockFactor": "Lager Faktor ",
     "normalOrderFactor": "Normal bestell Faktor ",
-    "ExpressOrderFactor": "Eil bestell Faktor ",
+    "expressOrderFactor": "Eil bestell Faktor ",
     "button": "Datei auswählen",
     "resetProgress": "Fortschritt zurücksetzen",
     "lostProgress": "Wenn Sie den Fortschritt zurücksetzen, geht alle Daten verloren.",

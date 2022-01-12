@@ -32,7 +32,7 @@
   "upload": {
     "stockFactor": "Stock factor",
     "normalOrderFactor": "Normal order factor",
-    "ExpressOrderFactor": "Express order factor ",
+    "expressOrderFactor": "Express order factor ",
     "button": "Choose file",
     "resetProgress": "Reset progress",
     "lostProgress": "If you reset the progress, all data will be lost.",
