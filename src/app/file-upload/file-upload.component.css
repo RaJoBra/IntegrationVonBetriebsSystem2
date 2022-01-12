@@ -3,3 +3,21 @@
   display: flex;
   justify-content: center;
 }
+
+.orderFactors {
+  margin-top: 2%;
+  display: flex;
+  justify-content: center;
+}
+
+.inputFieldLeft {
+  margin-right: 2%;
+}
+
+.inputField {
+  margin-left: 2%;
+}
+
+.inputFieldRight {
+  margin-left: 2%;
+}

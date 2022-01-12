@@ -1,16 +1,49 @@
 <app-process-navbar></app-process-navbar>
 <!-- Is shown when no file has been uploaded -->
+
+<div class="orderFactors">
+  <div clas="inputFieldLeft">
+    <mat-form-field appearance="fill">
+      <mat-label>{{ "upload.stockFactor" | translate }}</mat-label>
+      <input matInput [(ngModel)]="stockFactor" />
+    </mat-form-field>
+  </div>
+  <div class="inputField">
+    <mat-form-field appearance="fill">
+      <mat-label>{{ "upload.normalOrderFactor" | translate }}</mat-label>
+      <input matInput [(ngModel)]="normalOrderFactor" />
+    </mat-form-field>
+  </div>
+  <div class="inputFieldRight">
+    <mat-form-field appearance="fill">
+      <mat-label>{{ "upload.expressOrderFactor" | translate }}</mat-label>
+      <input matInput [(ngModel)]="expressOrderFactor" />
+    </mat-form-field>
+  </div>
+</div>
+
 <div *ngIf="!getProgress(); else resetProgress">
   <div class="file-upload-container">
     <!-- Button to upload a file -->
     <button mat-raised-button color="primary" (click)="fileInput.click()">
       {{ "upload.button" | translate }}
     </button>
-    <input hidden type="file" accept="text/xml" #fileInput (change)="onFileInput(fileInput.files)"/>
+    <input
+      hidden
+      type="file"
+      accept="text/xml"
+      #fileInput
+      (change)="onFileInput(fileInput.files)"
+    />
   </div>
   <div class="file-upload-container">
     <!-- Disabled button to reset the progress -->
-    <button mat-raised-button color="primary" (click)="openDialog()" [disabled]="true">
+    <button
+      mat-raised-button
+      color="primary"
+      (click)="openDialog()"
+      [disabled]="true"
+    >
       {{ "upload.resetProgress" | translate }}
     </button>
   </div>
@@ -20,10 +53,21 @@
 <ng-template #resetProgress>
   <div class="file-upload-container">
     <!-- Diabled button to upload a file -->
-    <button mat-raised-button color="primary" (click)="fileInput.click()" [disabled]="true">
+    <button
+      mat-raised-button
+      color="primary"
+      (click)="fileInput.click()"
+      [disabled]="true"
+    >
       {{ "upload.button" | translate }}
     </button>
-    <input hidden type="file" accept="text/xml" #fileInput (change)="onFileInput(fileInput.files)"/>
+    <input
+      hidden
+      type="file"
+      accept="text/xml"
+      #fileInput
+      (change)="onFileInput(fileInput.files)"
+    />
   </div>
   <!-- Button to reset the progress -->
   <div class="file-upload-container">
@@ -34,6 +78,14 @@
 </ng-template>
 
 <!-- HTML code for the view of the spinner -->
-<ngx-spinner bdColor="rgba(0, 0, 0, 0.8)" size="large" color="#532e7d" type="ball-spin-clockwise" [fullScreen]="true">
-  <p style="color: white; margin-top: 50px; font-size: 16px; font-weight: bold">{{ 'upload.spinner' | translate }}</p>
+<ngx-spinner
+  bdColor="rgba(0, 0, 0, 0.8)"
+  size="large"
+  color="#532e7d"
+  type="ball-spin-clockwise"
+  [fullScreen]="true"
+>
+  <p style="color: white; margin-top: 50px; font-size: 16px; font-weight: bold">
+    {{ "upload.spinner" | translate }}
+  </p>
 </ngx-spinner>
