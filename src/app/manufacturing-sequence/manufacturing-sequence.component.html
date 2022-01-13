@@ -1,4 +1,14 @@
 <app-process-navbar></app-process-navbar>
+<br/>
+
+<mat-card class="example-card">
+  <mat-card-title> {{ 'navbar.manufacturingSequence' | translate }}</mat-card-title>
+  <mat-divider inset></mat-divider>
+  <mat-card-content>
+    <br/>
+    {{ 'manufacturingSequence.explanation' | translate }}
+  </mat-card-content>
+</mat-card>
 
 <div id="container-table">
 <table mat-table [dataSource]="dataSource" cdkDropList

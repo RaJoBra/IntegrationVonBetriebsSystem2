@@ -83,7 +83,8 @@
     "splitAnOrder": "Auftrag teilen",
     "checkForNegativeProductionValues": "Es gibt negative Produktionsmengen",
     "currentOrderQuantity": "Aktuelle Auftragsmenge",
-    "newOrderQuantity": "Neue Auftragsmenge"
+    "newOrderQuantity": "Neue Auftragsmenge",
+    "explanation": "Hier haben Sie die Möglichkeit die Reihenfolge der Produktionsaufträge zu sehen und zu ändern. Um die Reihenfolge anzupassen, können Sie den Auftrag per Drag & Drop an die gewünschte Stelle verschieben. Zusätzlich besteht die Möglichkeit die vorhandenen Aufträge durch Losgrößensplitting aufzuteilen. Drücken Sie dazu bitte auf 'Teilen'."
   },
   "capacityPlanning": {
     "workstation": "Arbeitsplatz",
