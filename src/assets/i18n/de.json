@@ -58,7 +58,8 @@
     "safetyStock": "Sicherheitsbestand",
     "quantity": "Menge",
     "price": "Preis",
-    "penalty": "Konventionalstrafe"
+    "penalty": "Konventionalstrafe",
+    "explanation": "Bitte geben Sie hier den gewünschten Sicherheitsbestand ein. Den Verkaufswunsch der nächsten Periode wird bereits automatisch aus der Eingabe XML-Datei entnommen. Bei den folgenden Perioden können Sie zusätzlich eine Verkaufsprognose eingeben."
   },
   "disposition": {
     "multipleUseParts": "Mehrfach verwendbare Teile",

@@ -87,6 +87,8 @@ export class ProcessNavbarComponent implements OnInit {
     const negativeN3 = productionProgramPeriodN3Component.checkRouteToDisposition();
     if (negativeN1 || negativeN2 || negativeN3) {
       this.openDialog();
+      //productionProgramPeriodN1Component.checkForNegativeProductionValues();
+      //this.router.navigate(['/production-program']);
     } else {
       this.router.navigate(['/disposition']);
     }

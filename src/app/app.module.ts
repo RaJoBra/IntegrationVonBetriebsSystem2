@@ -59,6 +59,8 @@ registerLocaleData(localeFr, 'de');
 import { NavbarDialogComponent } from './navbar-dialog/navbar-dialog.component';
 import { ManualComponent } from './manual/manual.component';
 import { FileUploadDialogTypesComponent } from './file-upload-dialog-types/file-upload-dialog-types.component';
+import {MatCardModule} from '@angular/material/card';
+import {MatDividerModule} from '@angular/material/divider';
 
 @NgModule({
   declarations: [
@@ -115,6 +117,8 @@ import { FileUploadDialogTypesComponent } from './file-upload-dialog-types/file-
     MatTabsModule,
     HttpClientModule,
     FormsModule,
+    MatCardModule,
+    MatDividerModule,
 
     // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
     // and returns simulated server responses.

@@ -1,4 +1,14 @@
 <app-process-navbar></app-process-navbar>
+
+<mat-card class="example-card">
+  <mat-card-title> {{ 'navbar.productionProgram' | translate }}</mat-card-title>
+  <mat-divider inset></mat-divider>
+  <mat-card-content>
+    <br/>
+    {{ 'productionProgram.explanation' | translate }}
+  </mat-card-content>
+</mat-card>
+
 <mat-vertical-stepper>
     <mat-step>
       <ng-template matStepLabel>{{ 'productionProgram.currentPeriod' | translate }}</ng-template>

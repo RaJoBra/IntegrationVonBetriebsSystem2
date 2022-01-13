@@ -54,7 +54,8 @@
     "safetyStock": "Safety stock",
     "quantity": "Quantity",
     "price": "Price",
-    "penalty": "Penalty"
+    "penalty": "Penalty",
+    "explanation": "Please enter the wanted safety stock. The sell wish for the current period was already extracted from the xml file. For the next periods you can enter a sell forecast."
   },
   "disposition": {
     "multipleUseParts": "Multiple use parts",
