@@ -69,7 +69,8 @@
     "ordersInWaitingQueue": "Orders in waiting queue",
     "workInProgress": "Work in progress",
     "production": "Production",
-    "additionalPlannedWarehouseStock": "Additional planned warehouse stock"
+    "additionalPlannedWarehouseStock": "Additional planned warehouse stock",
+    "explanation": "In the second to last column you can add additional production quantities. They will be produced ontop the already set safety stock."
   },
   "manufacturingSequence": {
     "article": "Article",

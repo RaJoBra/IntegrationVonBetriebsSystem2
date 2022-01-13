@@ -73,7 +73,8 @@
     "ordersInWaitingQueue": "Aufträge in Warteschlange",
     "workInProgress": "Unfertige Erzeugnisse",
     "production": "Produktionsmenge",
-    "additionalPlannedWarehouseStock": "Zusätzlich geplanter Lagerbestand"
+    "additionalPlannedWarehouseStock": "Zusätzlich geplanter Lagerbestand",
+    "explanation": "Sie können hier in der vorletzten Spalte zusätzliche Produktionsmengen ergänzen. Diese werden dann zusätzlich zu dem festgesetzten Sicherheitsbestand produziert."
   },
   "manufacturingSequence": {
     "article": "Artikel",
