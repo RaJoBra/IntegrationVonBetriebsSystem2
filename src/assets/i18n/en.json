@@ -39,7 +39,9 @@
     "spinner": "Loading...",
     "fileType": "Wrong file type",
     "incompatible": "The {{value}} file type is not compatible with the tool.",
-    "xml": "Please upload an XML file."
+    "xml": "Please upload an XML file.",
+    "title": "Upload-Page",
+    "explanation": "Please upload the result file of the last period. Only XML-files are accepted. When a correct file was uploaded, you will be redirected."
   },
   "productionProgram": {
     "currentPeriod": "Current period",

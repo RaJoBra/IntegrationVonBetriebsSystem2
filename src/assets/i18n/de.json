@@ -43,7 +43,9 @@
     "spinner": "Laden...",
     "fileType": "Wrong file type",
     "incompatible": "Der Dateityp {{value}} ist nicht mit dem Tool kompatibel.",
-    "xml": "Bitte laden Sie eine XML-Datei hoch."
+    "xml": "Bitte laden Sie eine XML-Datei hoch.",
+    "title": "Upload-Seite",
+    "explanation": "Bitte laden Sie hier die Ergebnisdatei der letzten Periode hoch. Akzeptiert werden lediglich XML-Dateien. Wenn eine korrekte Datei hochgeladen wurde, werden Sie auf die nächste Seite weitergeleitet."
   },
   "productionProgram": {
     "currentPeriod": "Aktuelle Periode",
