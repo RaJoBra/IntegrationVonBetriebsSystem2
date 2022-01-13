@@ -99,7 +99,7 @@ export class ProductionProgramPeriodNComponent implements OnInit {
               console.log(directSales);
               this.updatePlannedSafetyStock();
               this.updateDataSource();
-              this.checkForNegativeProductionValues();
+              //this.checkForNegativeProductionValues();
               this.spinner.hide();
             });
           });
