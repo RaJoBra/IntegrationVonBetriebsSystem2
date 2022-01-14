@@ -113,7 +113,8 @@
     "normal": "Normal",
     "fast": "Eil",
     "totalCosts": "Gesamtkosten",
-    "consumption": "Verbrauch"
+    "consumption": "Verbrauch",
+    "explanation": "Hier können Sie die Materialplannung der geplanten Periode begutachten. Außerdem haben Sie die Möglichkeit die geplanten Bestellmengen anzupassen. "
   },
   "download": {
     "button": "Datei herunterladen"

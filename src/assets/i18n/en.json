@@ -108,7 +108,8 @@
     "normal": "Normal",
     "fast": "Fast",
     "totalCosts": "Total costs",
-    "consumption": "Consumption"
+    "consumption": "Consumption",
+    "explanation": "Here you can see the material planning for the period. Additionally you have the option to change the order values of the individual items."
   },
   "download": {
     "button": "Download file"
