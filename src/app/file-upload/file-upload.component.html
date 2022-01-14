@@ -9,6 +9,21 @@
   </mat-card-content>
 </mat-card>
 
+<!-- <div *ngIf="fileUploaded && !periodeAlt" style="text-align: center; overflow: hidden;">
+  <mat-card class="example-card">FILE REJECTED!</mat-card>
+</div>
+
+<div *ngIf="fileUploaded && periodeAlt" style="text-align: center; overflow: hidden;">
+  <mat-card class="example-card">Periode {{periodeAlt.ToString()}}</mat-card>
+</div>
+
+<div *ngIf="fileUploaded">
+  <mat-card class="example-card">Datei Da.</mat-card>
+</div>
+<div *ngIf="periodeAlt">
+  <mat-card class="example-card">periode Da.</mat-card>
+</div> -->
+
 <!-- Is shown when no file has been uploaded -->
 <div *ngIf="!getProgress(); else resetProgress">
   <div class="file-upload-container">
