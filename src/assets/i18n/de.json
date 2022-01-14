@@ -95,7 +95,8 @@
     "totalCapacityRequirements": "Gesamtkapazitätsbedarf",
     "shift": "Schichten",
     "overtime": "Überstunden",
-    "buffer": "Puffer"
+    "buffer": "Puffer",
+    "explanation": "Hier sehen Sie die berechnete Kapazitätsplanung. Für jeden Arbeitsplatz die benötigte Anzahl an Schichten und/oder Überstunden angezeigt. Zusätzlich haben Sie die Möglichkeit einen Puffer für die einzelnen Arbeitsplätze anzugeben, welcher dann als Überstunden in Minuten auf die geplanze Zeit addiert wird."
   },
   "materialPlanning": {
     "article": "Artikel",
