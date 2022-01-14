@@ -10,7 +10,8 @@
   </mat-card-content>
 </mat-card>
 
-<mat-vertical-stepper>
+<div class="default-container">
+  <mat-vertical-stepper>
     <mat-step>
       <ng-template matStepLabel>P1</ng-template>
       <app-disposition-p1></app-disposition-p1>
@@ -34,3 +35,5 @@
       <button mat-raised-button color="primary" matStepperPrevious>{{ 'previous' | translate }}</button>
    </mat-step>
   </mat-vertical-stepper>
+
+</div>
