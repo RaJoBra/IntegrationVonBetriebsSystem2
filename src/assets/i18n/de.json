@@ -42,7 +42,11 @@
     "incompatible": "Der Dateityp {{value}} ist nicht mit dem Tool kompatibel.",
     "xml": "Bitte laden Sie eine XML-Datei hoch.",
     "title": "Upload-Seite",
-    "explanation": "Bitte laden Sie hier die Ergebnisdatei der letzten Periode hoch. Akzeptiert werden lediglich XML-Dateien. Wenn eine korrekte Datei hochgeladen wurde, werden Sie auf die nächste Seite weitergeleitet."
+    "explanation": "Bitte laden Sie hier die Ergebnisdatei der letzten Periode hoch. Akzeptiert werden lediglich XML-Dateien. Wenn eine korrekte Datei hochgeladen wurde, werden Sie auf die nächste Seite weitergeleitet.",
+    "accepted": "Datei akzeptiert",
+    "acceptedText": "Ihre Datei ist validiert. Sie können nun über die Schaltfläche 'Produktionprogramm' fortfahren.",
+    "rejected": "Datei nicht akzeptiert",
+    "rejectedText": "Ihre Datei konnte nicht validiert werden. Bitte setzen Sie den Production Wizzard zurück und laden Sie eine korrekte Datei hoch."
   },
   "productionProgram": {
     "currentPeriod": "Aktuelle Periode",
@@ -93,7 +97,7 @@
     "shift": "Schichten",
     "overtime": "Überstunden",
     "buffer": "Puffer",
-    "explanation": "Hier sehen Sie die berechnete Kapazitätsplanung. Für jeden Arbeitsplatz die benötigte Anzahl an Schichten und/oder Überstunden angezeigt. Zusätzlich haben Sie die Möglichkeit einen Puffer für die einzelnen Arbeitsplätze anzugeben, welcher dann als Überstunden in Minuten auf die geplanze Zeit addiert wird."
+    "explanation": "Hier sehen Sie die berechnete Kapazitätsplanung. Für jeden Arbeitsplatz die benötigte Anzahl an Schichten und/oder Überstunden angezeigt. Zusätzlich haben Sie die Möglichkeit einen Puffer für die einzelnen Arbeitsplätze anzugeben, welcher dann auf die geplanze Zeit addiert wird. Bitte geben Sie die Zeit in Minuten pro Periode und nicht in Minuten/Tag ein."
   },
   "materialPlanning": {
     "article": "Artikel",

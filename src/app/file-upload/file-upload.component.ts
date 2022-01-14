@@ -29,7 +29,7 @@ import { StrategicData } from '../models/strategicData';
 
 import {parseString} from 'xml2js';
 import { Router } from '@angular/router';
-import { setTimeout } from 'timers';
+// import { setTimeout } from 'timers';
 
 @Component({
   selector: 'app-file-upload',
@@ -296,10 +296,10 @@ export class FileUploadComponent implements OnInit {
 
         const fileReader = new FileReader();
         fileReader.onload = () => {
+          this.fileUploaded = true;
           this.xmlString = fileReader.result?.toString();
           parseString(fileReader.result, (err: any, res: any) => {
             this.periodeAlt = res.results.$.period;
-            this.fileUploaded = true;
             console.log('last period:', this.periodeAlt);
           })
         };
@@ -360,13 +360,14 @@ export class FileUploadComponent implements OnInit {
           // Hides/ends spinner after 3 seconds
           setTimeout(() => {
             this.spinner.hide();
-          }, 4000);
+          }, 3000);
         };
 
         fileReader.readAsText(file);
         ProcessNavbarComponent.productionProgram = true;
-        this.redirectToNextPage();
-
+        // if(this.periodeAlt != null) {
+        //   this.redirectToNextPage();
+        // } 
       } else {
         this.openDialogTypes(file.type);
       }

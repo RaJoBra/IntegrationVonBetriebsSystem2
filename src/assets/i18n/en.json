@@ -41,7 +41,11 @@
     "incompatible": "The {{value}} file type is not compatible with the tool.",
     "xml": "Please upload an XML file.",
     "title": "Upload-Page",
-    "explanation": "Please upload the result file of the last period. Only XML-files are accepted. When a correct file was uploaded, you will be redirected."
+    "explanation": "Please upload the result file of the last period. Only XML-files are accepted. When a correct file was uploaded, you will be redirected.",
+    "accepted": "Datei akzeptiert",
+    "acceptedText": "Ihre Datei ist validiert. Sie können nun über 'Produktionprogramm' fortfahren.",
+    "rejected": "Datei nicht akzeptiert",
+    "rejectedText": "Ihre Datei konnte nicht validiert werden. Bitte setzen Sie den Production Wizzard zurück und laden Sie eine korrekte Datei hoch."
   },
   "productionProgram": {
     "currentPeriod": "Current period",
@@ -92,7 +96,7 @@
     "shift": "Shift",
     "overtime": "Overtime",
     "buffer": "Buffer",
-    "explanation": "Here you can see the calculated capacity planning. You also have the possibility to add a buffer ontop of the calculated time. Please enter the needed time in minutes per day in the buffer column."
+    "explanation": "Here you can see the calculated capacity planning. You also have the possibility to add a buffer ontop of the calculated time. Please enter the wanted buffer time in mitutes/period and not in minutes/day in the buffer column."
   },
   "materialPlanning": {
     "article": "Article",
