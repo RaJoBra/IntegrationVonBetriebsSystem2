@@ -6,6 +6,9 @@
   "yes": "Ja",
   "no": "Nein",
   "navbar": {
+    "start": "Start",
+    "manual": "Handbuch",
+    "dashboard": "Stammdaten",
     "productionPlanningTool": "Production Wizzard",
     "upload": "XML hochladen",
     "productionProgram": "Produktionsprogramm",
@@ -24,8 +27,8 @@
     "heading": "Production Wizzard",
     "text": "Ihre Software für optimale Planung und Organisation.",
     "button": "Planung starten",
-    "dashboard": "Stammdaten"
-
+    "dashboard": "Stammdaten",
+    "systemManual": "HANDBUCH"
   },
   "upload": {
     "button": "Datei auswählen",
@@ -37,7 +40,13 @@
     "spinner": "Laden...",
     "fileType": "Wrong file type",
     "incompatible": "Der Dateityp {{value}} ist nicht mit dem Tool kompatibel.",
-    "xml": "Bitte laden Sie eine XML-Datei hoch."
+    "xml": "Bitte laden Sie eine XML-Datei hoch.",
+    "title": "Upload-Seite",
+    "explanation": "Bitte laden Sie hier die Ergebnisdatei der letzten Periode hoch. Akzeptiert werden lediglich XML-Dateien. Wenn eine korrekte Datei hochgeladen wurde, werden Sie auf die nächste Seite weitergeleitet.",
+    "accepted": "Datei akzeptiert",
+    "acceptedText": "Ihre Datei ist validiert. Sie können nun über die Schaltfläche 'Produktionprogramm' fortfahren.",
+    "rejected": "Datei nicht akzeptiert",
+    "rejectedText": "Ihre Datei konnte nicht validiert werden. Bitte setzen Sie den Production Wizzard zurück und laden Sie eine korrekte Datei hoch."
   },
   "productionProgram": {
     "currentPeriod": "Aktuelle Periode",
@@ -52,7 +61,8 @@
     "safetyStock": "Sicherheitsbestand",
     "quantity": "Menge",
     "price": "Preis",
-    "penalty": "Konventionalstrafe"
+    "penalty": "Konventionalstrafe",
+    "explanation": "Bitte geben Sie hier den gewünschten Sicherheitsbestand ein. Den Verkaufswunsch der nächsten Periode wird bereits automatisch aus der Eingabe XML-Datei entnommen. Bei den folgenden Perioden können Sie zusätzlich eine Verkaufsprognose eingeben."
   },
   "disposition": {
     "multipleUseParts": "Mehrfach verwendbare Teile",
@@ -64,7 +74,8 @@
     "ordersInWaitingQueue": "Aufträge in Warteschlange",
     "workInProgress": "Unfertige Erzeugnisse",
     "production": "Produktionsmenge",
-    "additionalPlannedWarehouseStock": "Zusätzlich geplanter Lagerbestand"
+    "additionalPlannedWarehouseStock": "Zusätzlich geplanter Lagerbestand",
+    "explanation": "Sie können hier in der vorletzten Spalte zusätzliche Produktionsmengen ergänzen. Diese werden dann zusätzlich zu dem festgesetzten Sicherheitsbestand produziert."
   },
   "manufacturingSequence": {
     "article": "Artikel",
@@ -73,7 +84,8 @@
     "splitAnOrder": "Auftrag teilen",
     "checkForNegativeProductionValues": "Es gibt negative Produktionsmengen",
     "currentOrderQuantity": "Aktuelle Auftragsmenge",
-    "newOrderQuantity": "Neue Auftragsmenge"
+    "newOrderQuantity": "Neue Auftragsmenge",
+    "explanation": "Hier haben Sie die Möglichkeit die Reihenfolge der Produktionsaufträge zu sehen und zu ändern. Um die Reihenfolge anzupassen, können Sie den Auftrag per Drag & Drop an die gewünschte Stelle verschieben. Zusätzlich besteht die Möglichkeit die vorhandenen Aufträge durch Losgrößensplitting aufzuteilen. Drücken Sie dazu bitte auf 'Teilen'."
   },
   "capacityPlanning": {
     "workstation": "Arbeitsplatz",
@@ -84,7 +96,8 @@
     "totalCapacityRequirements": "Gesamtkapazitätsbedarf",
     "shift": "Schichten",
     "overtime": "Überstunden",
-    "buffer": "Puffer"
+    "buffer": "Puffer",
+    "explanation": "Hier sehen Sie die berechnete Kapazitätsplanung. Für jeden Arbeitsplatz die benötigte Anzahl an Schichten und/oder Überstunden angezeigt. Zusätzlich haben Sie die Möglichkeit einen Puffer für die einzelnen Arbeitsplätze anzugeben, welcher dann auf die geplanze Zeit addiert wird. Bitte geben Sie die Zeit in Minuten pro Periode und nicht in Minuten/Tag ein."
   },
   "materialPlanning": {
     "article": "Artikel",
@@ -101,10 +114,13 @@
     "normal": "Normal",
     "fast": "Eil",
     "totalCosts": "Gesamtkosten",
-    "consumption": "Verbrauch"
-      },
+    "consumption": "Verbrauch",
+    "explanation": "Hier können Sie die Materialplannung der geplanten Periode begutachten. Außerdem haben Sie die Möglichkeit die geplanten Bestellmengen anzupassen. "
+  },
   "download": {
-    "button": "Datei herunterladen"
+    "button": "Datei herunterladen",
+    "title": "Download-Seite",
+    "explanation": "Hier können Sie die Ergebnis-Datei herunterladen. Drücken Sie dazu bitte auf den folgenden Knopf."
   },
   "coreData": {
     "quantityList": "Mengenstückliste",
@@ -118,8 +134,12 @@
     "staticData": "Stammdaten",
     "conditionalData": "Periodenspezifische Daten"
   },
- 
-
+  "tutorial": {
+    "video1Headline": "Kennenlernen des Production Wizzards",
+    "video2Headline": "Beispielhafter Planungsprozess",
+    "video1Subtext": "In diesem Tutorial bekommen Sie den grundsätzlichen Umgang mit dem Planungtool gezeigt. ",
+    "video2Subtext": "In diesem Video sehen Sie einen beispielhaften Planungsprozess."
+  },
   "dynamicData": {
     "futureInwardStockMovement": "Zukünftiger Lagereingang",
     "article": "Artikel",
