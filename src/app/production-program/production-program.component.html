@@ -9,7 +9,8 @@
   </mat-card-content>
 </mat-card>
 
-<mat-vertical-stepper>
+<!-- <div class="default-container"> -->
+  <mat-vertical-stepper class="example-container">
     <mat-step>
       <ng-template matStepLabel>{{ 'productionProgram.currentPeriod' | translate }}</ng-template>
       <app-production-program-period-n></app-production-program-period-n>
@@ -38,3 +39,4 @@
        <button mat-raised-button color="primary" matStepperPrevious>{{ 'previous' | translate }}</button>
      </mat-step>
   </mat-vertical-stepper>
+<!-- </div> -->

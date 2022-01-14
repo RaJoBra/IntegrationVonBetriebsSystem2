@@ -102,3 +102,12 @@ mat-header-cell:last-child {
   margin-right:auto;  
   vertical-align:middle;
 }
+
+.default-container {
+  margin-top: 2%;
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+  margin-left: auto;
+  margin-right: auto;
+}
