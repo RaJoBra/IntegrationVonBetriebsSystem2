@@ -39,7 +39,9 @@
     "spinner": "Loading...",
     "fileType": "Wrong file type",
     "incompatible": "The {{value}} file type is not compatible with the tool.",
-    "xml": "Please upload an XML file."
+    "xml": "Please upload an XML file.",
+    "title": "Upload-Page",
+    "explanation": "Please upload the result file of the last period. Only XML-files are accepted. When a correct file was uploaded, you will be redirected."
   },
   "productionProgram": {
     "currentPeriod": "Current period",
@@ -54,7 +56,8 @@
     "safetyStock": "Safety stock",
     "quantity": "Quantity",
     "price": "Price",
-    "penalty": "Penalty"
+    "penalty": "Penalty",
+    "explanation": "Please enter the wanted safety stock. The sell wish for the current period was already extracted from the xml file. For the next periods you can enter a sell forecast."
   },
   "disposition": {
     "multipleUseParts": "Multiple use parts",
@@ -66,7 +69,8 @@
     "ordersInWaitingQueue": "Orders in waiting queue",
     "workInProgress": "Work in progress",
     "production": "Production",
-    "additionalPlannedWarehouseStock": "Additional planned warehouse stock"
+    "additionalPlannedWarehouseStock": "Additional planned warehouse stock",
+    "explanation": "In the second to last column you can add additional production quantities. They will be produced ontop the already set safety stock."
   },
   "manufacturingSequence": {
     "article": "Article",
@@ -75,7 +79,8 @@
     "splitAnOrder": "Split an order",
     "checkForNegativeProductionValues": "There are negative production values",
     "currentOrderQuantity": "Current order quantity",
-    "newOrderQuantity": "New order quantity"
+    "newOrderQuantity": "New order quantity",
+    "explanation": "Here you can see and change the order of the production orders by drag and drop. Additionally you can split the orders. To do so you have to click on the 'split' button."
   },
   "capacityPlanning": {
     "workstation": "Workstation",
@@ -86,7 +91,8 @@
     "totalCapacityRequirements": "Total capacity requirements",
     "shift": "Shift",
     "overtime": "Overtime",
-    "buffer": "Buffer"
+    "buffer": "Buffer",
+    "explanation": "Here you can see the calculated capacity planning. You also have the possibility to add a buffer ontop of the calculated time. Please enter the needed time in minutes per day in the buffer column."
   },
   "materialPlanning": {
     "article": "Article",
@@ -103,10 +109,13 @@
     "normal": "Normal",
     "fast": "Fast",
     "totalCosts": "Total costs",
-    "consumption": "Consumption"
+    "consumption": "Consumption",
+    "explanation": "Here you can see the material planning for the period. Additionally you have the option to change the order values of the individual items."
   },
   "download": {
-    "button": "Download file"
+    "button": "Download file",
+    "title": "Download-Page",
+    "explanation": "Here you can download the result file. To do so please press the following button."
   },
   "coreData": {
     "quantityList": "Quantity list",

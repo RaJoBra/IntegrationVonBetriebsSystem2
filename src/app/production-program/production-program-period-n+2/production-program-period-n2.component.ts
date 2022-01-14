@@ -69,7 +69,7 @@ export class ProductionProgramPeriodN2Component implements OnInit {
                 this.queues = queues;
                 this.updateForecastAndPlannedSafetyStock();
                 this.updateDataSource();
-                this.checkForNegativeProductionValues();
+                //this.checkForNegativeProductionValues();
               });
           });
       });

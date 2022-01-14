@@ -2,3 +2,7 @@
     background-color: #532e7d;
     margin: 10px;
 }
+.example-card {
+    max-width: 700px;
+    margin-left: 25px;
+}

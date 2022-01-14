@@ -28,9 +28,6 @@
     "text": "Ihre Software für optimale Planung und Organisation.",
     "button": "Planung starten",
     "dashboard": "Stammdaten",
-    "github": "Open Source erlaubt Ihnen den tiefst möglichen Einblick in unser System und seine Funktionalität. Sollten Sie Verbesserungsvorschläge haben oder Bugs finden, nutzen Sie den Issue Tracker.",
-    "tutorial": "Hier finden Sie Tutorial-Videos zu den verschiedenen Aspekten und Funktionen des Systems. Von einer generellen Einführung bis zu einem beispielhaften Planungsprozess bieten wir dem Nutzer alles um sich effizient in das System einzuarbeiten.",
-    "manualText": "Sollten Ihnen die Tutorialvideos nicht ausreichen, oder wenn Sie einen tieferen Einblick in die gebotene Funktionalität erhalten wollen, finden Sie hier genau was Sie suchen. Im Handbuch werden alle Features und Funktionalitäten detailliert beschrieben zusammen mit Erklärungen zu Technologie und Datenberechnung.",
     "systemManual": "HANDBUCH"
   },
   "upload": {
@@ -43,7 +40,9 @@
     "spinner": "Laden...",
     "fileType": "Wrong file type",
     "incompatible": "Der Dateityp {{value}} ist nicht mit dem Tool kompatibel.",
-    "xml": "Bitte laden Sie eine XML-Datei hoch."
+    "xml": "Bitte laden Sie eine XML-Datei hoch.",
+    "title": "Upload-Seite",
+    "explanation": "Bitte laden Sie hier die Ergebnisdatei der letzten Periode hoch. Akzeptiert werden lediglich XML-Dateien. Wenn eine korrekte Datei hochgeladen wurde, werden Sie auf die nächste Seite weitergeleitet."
   },
   "productionProgram": {
     "currentPeriod": "Aktuelle Periode",
@@ -58,7 +57,8 @@
     "safetyStock": "Sicherheitsbestand",
     "quantity": "Menge",
     "price": "Preis",
-    "penalty": "Konventionalstrafe"
+    "penalty": "Konventionalstrafe",
+    "explanation": "Bitte geben Sie hier den gewünschten Sicherheitsbestand ein. Den Verkaufswunsch der nächsten Periode wird bereits automatisch aus der Eingabe XML-Datei entnommen. Bei den folgenden Perioden können Sie zusätzlich eine Verkaufsprognose eingeben."
   },
   "disposition": {
     "multipleUseParts": "Mehrfach verwendbare Teile",
@@ -70,7 +70,8 @@
     "ordersInWaitingQueue": "Aufträge in Warteschlange",
     "workInProgress": "Unfertige Erzeugnisse",
     "production": "Produktionsmenge",
-    "additionalPlannedWarehouseStock": "Zusätzlich geplanter Lagerbestand"
+    "additionalPlannedWarehouseStock": "Zusätzlich geplanter Lagerbestand",
+    "explanation": "Sie können hier in der vorletzten Spalte zusätzliche Produktionsmengen ergänzen. Diese werden dann zusätzlich zu dem festgesetzten Sicherheitsbestand produziert."
   },
   "manufacturingSequence": {
     "article": "Artikel",
@@ -79,7 +80,8 @@
     "splitAnOrder": "Auftrag teilen",
     "checkForNegativeProductionValues": "Es gibt negative Produktionsmengen",
     "currentOrderQuantity": "Aktuelle Auftragsmenge",
-    "newOrderQuantity": "Neue Auftragsmenge"
+    "newOrderQuantity": "Neue Auftragsmenge",
+    "explanation": "Hier haben Sie die Möglichkeit die Reihenfolge der Produktionsaufträge zu sehen und zu ändern. Um die Reihenfolge anzupassen, können Sie den Auftrag per Drag & Drop an die gewünschte Stelle verschieben. Zusätzlich besteht die Möglichkeit die vorhandenen Aufträge durch Losgrößensplitting aufzuteilen. Drücken Sie dazu bitte auf 'Teilen'."
   },
   "capacityPlanning": {
     "workstation": "Arbeitsplatz",
@@ -90,7 +92,8 @@
     "totalCapacityRequirements": "Gesamtkapazitätsbedarf",
     "shift": "Schichten",
     "overtime": "Überstunden",
-    "buffer": "Puffer"
+    "buffer": "Puffer",
+    "explanation": "Hier sehen Sie die berechnete Kapazitätsplanung. Für jeden Arbeitsplatz die benötigte Anzahl an Schichten und/oder Überstunden angezeigt. Zusätzlich haben Sie die Möglichkeit einen Puffer für die einzelnen Arbeitsplätze anzugeben, welcher dann als Überstunden in Minuten auf die geplanze Zeit addiert wird."
   },
   "materialPlanning": {
     "article": "Artikel",
@@ -107,10 +110,13 @@
     "normal": "Normal",
     "fast": "Eil",
     "totalCosts": "Gesamtkosten",
-    "consumption": "Verbrauch"
+    "consumption": "Verbrauch",
+    "explanation": "Hier können Sie die Materialplannung der geplanten Periode begutachten. Außerdem haben Sie die Möglichkeit die geplanten Bestellmengen anzupassen. "
   },
   "download": {
-    "button": "Datei herunterladen"
+    "button": "Datei herunterladen",
+    "title": "Download-Seite",
+    "explanation": "Hier können Sie die Ergebnis-Datei herunterladen. Drücken Sie dazu bitte auf den folgenden Knopf."
   },
   "coreData": {
     "quantityList": "Mengenstückliste",

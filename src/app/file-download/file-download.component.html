@@ -1,4 +1,15 @@
 <app-process-navbar></app-process-navbar>
+<br/>
+
+<mat-card class="example-card">
+  <mat-card-title> {{ 'download.title' | translate }}</mat-card-title>
+  <mat-divider inset></mat-divider>
+  <mat-card-content>
+    <br/>
+    {{ 'download.explanation' | translate }}
+  </mat-card-content>
+</mat-card>
+
 <div class="file-download-container">
   <a mat-raised-button color="primary" [href]="fileUrl" download="input.xml" target="_blank">{{ 'download.button' | translate }}</a>
 </div>

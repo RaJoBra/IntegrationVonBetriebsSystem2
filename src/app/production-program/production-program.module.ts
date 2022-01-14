@@ -7,6 +7,8 @@ import { ProductionProgramPeriodN3Component } from './production-program-period-
 import { ProductionProgramPeriodN3 } from './production-program-period-n+3/production-program-period-n3.module';
 import { DirectSalesComponent } from './direct-sales/direct-sales.component';
 import { DirectSalesModule } from './direct-sales/direct-sales.module';
+import { MatCard } from '@angular/material/card';
+import { MatDivider } from '@angular/material/divider';
 
 @NgModule({
     declarations: [ProductionProgramModule, ProductionProgramPeriodN2Component, ProductionProgramPeriodN2Component, ProductionProgramPeriodN3Component, DirectSalesComponent],

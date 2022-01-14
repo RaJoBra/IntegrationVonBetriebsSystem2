@@ -27,6 +27,7 @@ import { ProcessNavbarComponent } from '../process-navbar/process-navbar.compone
 import { IdleTimeCost } from '../models/idleTimeCost';
 import { StrategicData } from '../models/strategicData';
 
+
 @Component({
   selector: 'app-file-upload',
   templateUrl: './file-upload.component.html',
