@@ -27,6 +27,9 @@ import { ProcessNavbarComponent } from '../process-navbar/process-navbar.compone
 import { IdleTimeCost } from '../models/idleTimeCost';
 import { StrategicData } from '../models/strategicData';
 
+import {parseString} from 'xml2js';
+import { Router } from '@angular/router';
+// import { setTimeout } from 'timers';
 
 @Component({
   selector: 'app-file-upload',
@@ -34,6 +37,11 @@ import { StrategicData } from '../models/strategicData';
   styleUrls: ['./file-upload.component.css'],
 })
 export class FileUploadComponent implements OnInit {
+
+  fileUploaded: boolean = false;
+  periodeAlt: any;
+  xmlString?: string = '';
+
   sanitizer: DomSanitizer;
   PartIds: number[] = [
     1,
@@ -72,7 +80,8 @@ export class FileUploadComponent implements OnInit {
   constructor(
     private prodPlanToolService: ProdPlanToolService,
     public dialog: MatDialog,
-    private spinner: NgxSpinnerService
+    private spinner: NgxSpinnerService,
+    private router: Router
   ) {}
 
   ngOnInit(): void {
@@ -274,12 +283,31 @@ export class FileUploadComponent implements OnInit {
     return ProcessNavbarComponent.progress;
   }
 
+  redirectToNextPage() {
+    this.router.navigate(['/production-program']);
+  }
+
   // will be executed as soon as a file has been uploaded
   onFileInput(files: FileList | null): void {
+
     let file: File = null;
     if (files) {
       file = files.item(0);
+
+        const fileReader = new FileReader();
+        fileReader.onload = () => {
+          this.fileUploaded = true;
+          this.xmlString = fileReader.result?.toString();
+          parseString(fileReader.result, (err: any, res: any) => {
+            this.periodeAlt = res.results.$.period;
+            console.log('last period:', this.periodeAlt);
+          })
+        };
+        fileReader.readAsText(file);
+
+
       if (file.type === 'text/xml') {
+      // if (this.periodeAlt) {
         const fileReader = new FileReader();
         fileReader.onload = () => {
           // Displays spinner for 3 seconds, which is defined in HTML code
@@ -315,6 +343,7 @@ export class FileUploadComponent implements OnInit {
           this.addStrategicDatasToDB(xml);
 
           const period = this.addForecastToDB(xml);
+          // this.periodeAlt = this.getPeriod(xml);
           this.addInitialForecasts();
           this.addInitialDirectSales();
 
@@ -336,10 +365,13 @@ export class FileUploadComponent implements OnInit {
 
         fileReader.readAsText(file);
         ProcessNavbarComponent.productionProgram = true;
+        // if(this.periodeAlt != null) {
+        //   this.redirectToNextPage();
+        // } 
       } else {
         this.openDialogTypes(file.type);
       }
-    }
+    } 
   }
 
   private addQueuesToDB(xml: Document) {
@@ -660,6 +692,17 @@ export class FileUploadComponent implements OnInit {
         production: 0,
       });
     }
+  }
+
+  private getPeriod(xml: Document) {
+    const period = xml.evaluate(
+      '/results/@period',
+      xml,
+      null,
+      XPathResult.NUMBER_TYPE,
+      null
+    ).numberValue;
+    return period;
   }
 
   private addForecastToDB(xml: Document) {
