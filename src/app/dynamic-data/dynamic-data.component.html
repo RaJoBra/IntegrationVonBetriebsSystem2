@@ -1,227 +1,297 @@
 <div class="warning" *ngIf="articles.length === 0">
-    <button mat-raised-button routerLink="/file-upload" color="primary">{{ 'dynamicData.upload' | translate }}</button>
+  <button mat-raised-button routerLink="/file-upload" color="primary">
+    {{ "dynamicData.upload" | translate }}
+  </button>
 </div>
 <div *ngIf="wareHouseStockDataSource.length > 0">
   <mat-tab-group mat-align-tabs="center">
-    <mat-tab label = "{{ 'dynamicData.result' | translate }}">
-      <table *ngIf="strategicData" mat-table [dataSource]="STRATEGIC_DATA_TABLE_DATA" class="mat-elevation-z8">
-
+    <mat-tab label="{{ 'dynamicData.result' | translate }}">
+      <table
+        *ngIf="strategicData"
+        mat-table
+        [dataSource]="STRATEGIC_DATA_TABLE_DATA"
+        class="mat-elevation-z8"
+      >
         <!-- KeyFigure Column -->
         <ng-container matColumnDef="keyFigure">
-          <th mat-header-cell *matHeaderCellDef> {{ 'dynamicData.keyFigure' | translate }} </th>
-          <td mat-cell *matCellDef="let element"> {{ element.label | translate }} </td>
+          <th mat-header-cell *matHeaderCellDef>
+            {{ "dynamicData.keyFigure" | translate }}
+          </th>
+          <td mat-cell *matCellDef="let element">
+            {{ element.label | translate }}
+          </td>
         </ng-container>
 
         <!-- DataCurrentColumn -->
         <ng-container matColumnDef="dataCurrent">
-          <th mat-header-cell *matHeaderCellDef> {{ 'dynamicData.currentResult' | translate }} </th>
-          <td mat-cell *matCellDef="let element"> {{element.dataCurrent}} </td>
+          <th mat-header-cell *matHeaderCellDef>
+            {{ "dynamicData.currentResult" | translate }}
+          </th>
+          <td mat-cell *matCellDef="let element">{{ element.dataCurrent }}</td>
         </ng-container>
 
         <!-- DataAverage Column -->
         <ng-container matColumnDef="dataAverage">
-          <th mat-header-cell *matHeaderCellDef> {{ 'dynamicData.averageRresult' | translate }} </th>
-          <td mat-cell *matCellDef="let element"> {{element.dataAverage}} </td>
+          <th mat-header-cell *matHeaderCellDef>
+            {{ "dynamicData.averageRresult" | translate }}
+          </th>
+          <td mat-cell *matCellDef="let element">{{ element.dataAverage }}</td>
         </ng-container>
 
         <tr mat-header-row *matHeaderRowDef="displayedColumnsResult"></tr>
-        <tr mat-row *matRowDef="let row; columns: displayedColumnsResult;"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumnsResult"></tr>
       </table>
     </mat-tab>
     <mat-tab label="{{ 'dynamicData.futureInwardStockMovement' | translate }}">
-      <table *ngIf="futureInwardStockMovementsDataSource.length > 0" mat-table [dataSource]="futureInwardStockMovementsDataSource" class="mat-elevation-z8">
-
+      <table
+        *ngIf="futureInwardStockMovementsDataSource.length > 0"
+        mat-table
+        [dataSource]="futureInwardStockMovementsDataSource"
+        class="mat-elevation-z8"
+      >
         <!-- Article Column -->
         <ng-container matColumnDef="article">
-          <th mat-header-cell *matHeaderCellDef> {{ 'dynamicData.article' | translate }} </th>
-          <td mat-cell *matCellDef="let element"> {{element.article}} </td>
+          <th mat-header-cell *matHeaderCellDef>
+            {{ "dynamicData.article" | translate }}
+          </th>
+          <td mat-cell *matCellDef="let element">{{ element.article }}</td>
         </ng-container>
 
         <!-- Amount Column -->
         <ng-container matColumnDef="amount">
-          <th mat-header-cell *matHeaderCellDef> {{ 'dynamicData.amount' | translate }} </th>
-          <td mat-cell *matCellDef="let element"> {{element.amount}} </td>
+          <th mat-header-cell *matHeaderCellDef>
+            {{ "dynamicData.amount" | translate }}
+          </th>
+          <td mat-cell *matCellDef="let element">{{ element.amount }}</td>
         </ng-container>
 
         <!-- ArrivingPeriod Column -->
         <ng-container matColumnDef="arrivingPeriod">
-          <th mat-header-cell *matHeaderCellDef> {{ 'dynamicData.arrivingPeriod' | translate }} </th>
-          <td mat-cell *matCellDef="let element"> {{element.arrivingPeriod}} </td>
+          <th mat-header-cell *matHeaderCellDef>
+            {{ "dynamicData.arrivingPeriod" | translate }}
+          </th>
+          <td mat-cell *matCellDef="let element">
+            {{ element.arrivingPeriod }}
+          </td>
         </ng-container>
 
         <!-- Mode Column -->
         <ng-container matColumnDef="mode">
-          <th mat-header-cell *matHeaderCellDef> {{ 'dynamicData.mode' | translate }} </th>
-          <td mat-cell *matCellDef="let element"> {{element.mode}} </td>
+          <th mat-header-cell *matHeaderCellDef>
+            {{ "dynamicData.mode" | translate }}
+          </th>
+          <td mat-cell *matCellDef="let element">{{ element.mode }}</td>
         </ng-container>
 
-        <tr mat-header-row *matHeaderRowDef="displayedColumnsFutureInwardStockMovement"></tr>
-        <tr mat-row *matRowDef="let row; columns: displayedColumnsFutureInwardStockMovement;"></tr>
+        <tr
+          mat-header-row
+          *matHeaderRowDef="displayedColumnsFutureInwardStockMovement"
+        ></tr>
+        <tr
+          mat-row
+          *matRowDef="
+            let row;
+            columns: displayedColumnsFutureInwardStockMovement
+          "
+        ></tr>
       </table>
     </mat-tab>
     <mat-tab label="{{ 'dynamicData.warehousestock' | translate }}">
-      <table *ngIf="wareHouseStockDataSource.length > 0" mat-table [dataSource]="wareHouseStockDataSource" class="mat-elevation-z8">
-
+      <table
+        *ngIf="wareHouseStockDataSource.length > 0"
+        mat-table
+        [dataSource]="wareHouseStockDataSource"
+        class="mat-elevation-z8"
+      >
         <!-- Article Column -->
         <ng-container matColumnDef="article">
-          <th mat-header-cell *matHeaderCellDef> {{ 'dynamicData.article' | translate }} </th>
-          <td mat-cell *matCellDef="let element"> {{element.article}} </td>
+          <th mat-header-cell *matHeaderCellDef>
+            {{ "dynamicData.article" | translate }}
+          </th>
+          <td mat-cell *matCellDef="let element">{{ element.article }}</td>
         </ng-container>
 
         <!-- Amount Column -->
         <ng-container matColumnDef="amount">
-          <th mat-header-cell *matHeaderCellDef> {{ 'dynamicData.amount' | translate }} </th>
-          <td mat-cell *matCellDef="let element"> {{element.amount}} </td>
+          <th mat-header-cell *matHeaderCellDef>
+            {{ "dynamicData.amount" | translate }}
+          </th>
+          <td mat-cell *matCellDef="let element">{{ element.amount }}</td>
         </ng-container>
 
         <!-- Price Column -->
         <ng-container matColumnDef="price">
-          <th mat-header-cell *matHeaderCellDef> {{ 'dynamicData.price' | translate }} </th>
-          <td mat-cell *matCellDef="let element"> {{element.price}} </td>
+          <th mat-header-cell *matHeaderCellDef>
+            {{ "dynamicData.price" | translate }}
+          </th>
+          <td mat-cell *matCellDef="let element">{{ element.price }}</td>
         </ng-container>
 
         <!-- Value Column -->
         <ng-container matColumnDef="value">
-          <th mat-header-cell *matHeaderCellDef> {{ 'dynamicData.value' | translate }} </th>
-          <td mat-cell *matCellDef="let element"> {{element.value}} </td>
+          <th mat-header-cell *matHeaderCellDef>
+            {{ "dynamicData.value" | translate }}
+          </th>
+          <td mat-cell *matCellDef="let element">{{ element.value }}</td>
         </ng-container>
 
-        <tr mat-header-row *matHeaderRowDef="displayedColumnsWareHouseStock"></tr>
-        <tr mat-row  [ngClass]="{'make-red': row.amount == 0 }"  *matRowDef="let row; columns: displayedColumnsWareHouseStock;"></tr>
+        <tr
+          mat-header-row
+          *matHeaderRowDef="displayedColumnsWareHouseStock"
+        ></tr>
+        <tr
+          mat-row
+          [ngClass]="{ 'make-red': row.amount == 0 }"
+          *matRowDef="let row; columns: displayedColumnsWareHouseStock"
+        ></tr>
       </table>
     </mat-tab>
     <mat-tab label="{{ 'dynamicData.queues' | translate }}">
       <mat-tab-group mat-align-tabs="center">
         <mat-tab label="{{ 'dynamicData.inWork' | translate }}">
-          <table *ngIf="queuesInWorkDataSource.length > 0" mat-table [dataSource]="queuesInWorkDataSource" class="mat-elevation-z8">
-
+          <table
+            *ngIf="queuesInWorkDataSource.length > 0"
+            mat-table
+            [dataSource]="queuesInWorkDataSource"
+            class="mat-elevation-z8"
+          >
             <!-- Article Column -->
             <ng-container matColumnDef="article">
-              <th mat-header-cell *matHeaderCellDef> {{ 'dynamicData.article' | translate }} </th>
-              <td mat-cell *matCellDef="let element"> {{element.article}} </td>
+              <th mat-header-cell *matHeaderCellDef>
+                {{ "dynamicData.article" | translate }}
+              </th>
+              <td mat-cell *matCellDef="let element">{{ element.article }}</td>
             </ng-container>
 
             <!-- Amount Column -->
             <ng-container matColumnDef="amount">
-              <th mat-header-cell *matHeaderCellDef> {{ 'dynamicData.amount' | translate }} </th>
-              <td mat-cell *matCellDef="let element"> {{element.amount}} </td>
+              <th mat-header-cell *matHeaderCellDef>
+                {{ "dynamicData.amount" | translate }}
+              </th>
+              <td mat-cell *matCellDef="let element">{{ element.amount }}</td>
             </ng-container>
 
             <!-- Time Column -->
             <ng-container matColumnDef="time">
-              <th mat-header-cell *matHeaderCellDef> {{ 'dynamicData.time' | translate }} </th>
-              <td mat-cell *matCellDef="let element"> {{element.time}} </td>
+              <th mat-header-cell *matHeaderCellDef>
+                {{ "dynamicData.time" | translate }}
+              </th>
+              <td mat-cell *matCellDef="let element">{{ element.time }}</td>
             </ng-container>
 
             <!-- Value Column -->
             <ng-container matColumnDef="workstation">
-              <th mat-header-cell *matHeaderCellDef> {{ 'dynamicData.workstation' | translate }} </th>
-              <td mat-cell *matCellDef="let element"> {{element.workstation}} </td>
+              <th mat-header-cell *matHeaderCellDef>
+                {{ "dynamicData.workstation" | translate }}
+              </th>
+              <td mat-cell *matCellDef="let element">
+                {{ element.workstation }}
+              </td>
             </ng-container>
 
             <tr mat-header-row *matHeaderRowDef="displayedColumnsQueues"></tr>
-            <tr mat-row *matRowDef="let row; columns: displayedColumnsQueues;"></tr>
+            <tr
+              mat-row
+              *matRowDef="let row; columns: displayedColumnsQueues"
+            ></tr>
           </table>
         </mat-tab>
         <mat-tab label="{{ 'dynamicData.atWorkstation' | translate }}">
-          <table *ngIf="queuesNotInWorkDataSource.length > 0" mat-table [dataSource]="queuesNotInWorkDataSource" class="mat-elevation-z8">
-
+          <table
+            *ngIf="queuesNotInWorkDataSource.length > 0"
+            mat-table
+            [dataSource]="queuesNotInWorkDataSource"
+            class="mat-elevation-z8"
+          >
             <!-- Article Column -->
             <ng-container matColumnDef="article">
-              <th mat-header-cell *matHeaderCellDef> {{ 'dynamicData.article' | translate }} </th>
-              <td mat-cell *matCellDef="let element"> {{element.article}} </td>
+              <th mat-header-cell *matHeaderCellDef>
+                {{ "dynamicData.article" | translate }}
+              </th>
+              <td mat-cell *matCellDef="let element">{{ element.article }}</td>
             </ng-container>
 
             <!-- Amount Column -->
             <ng-container matColumnDef="amount">
-              <th mat-header-cell *matHeaderCellDef> {{ 'dynamicData.amount' | translate }} </th>
-              <td mat-cell *matCellDef="let element"> {{element.amount}} </td>
+              <th mat-header-cell *matHeaderCellDef>
+                {{ "dynamicData.amount" | translate }}
+              </th>
+              <td mat-cell *matCellDef="let element">{{ element.amount }}</td>
             </ng-container>
 
             <!-- Time Column -->
             <ng-container matColumnDef="time">
-              <th mat-header-cell *matHeaderCellDef> {{ 'dynamicData.time' | translate }} </th>
-              <td mat-cell *matCellDef="let element"> {{element.time}} </td>
+              <th mat-header-cell *matHeaderCellDef>
+                {{ "dynamicData.time" | translate }}
+              </th>
+              <td mat-cell *matCellDef="let element">{{ element.time }}</td>
             </ng-container>
 
             <!-- Value Column -->
             <ng-container matColumnDef="workstation">
-              <th mat-header-cell *matHeaderCellDef> {{ 'dynamicData.workstation' | translate }} </th>
-              <td mat-cell *matCellDef="let element"> {{element.workstation}} </td>
+              <th mat-header-cell *matHeaderCellDef>
+                {{ "dynamicData.workstation" | translate }}
+              </th>
+              <td mat-cell *matCellDef="let element">
+                {{ element.workstation }}
+              </td>
             </ng-container>
 
             <tr mat-header-row *matHeaderRowDef="displayedColumnsQueues"></tr>
-            <tr mat-row *matRowDef="let row; columns: displayedColumnsQueues;"></tr>
+            <tr
+              mat-row
+              *matRowDef="let row; columns: displayedColumnsQueues"
+            ></tr>
           </table>
         </mat-tab>
         <mat-tab label="{{ 'dynamicData.capacityPerWorkstation' | translate }}">
-          <table mat-table [dataSource]="capacityPerWorkStation" class="mat-elevation-z8">
-
+          <table
+            mat-table
+            [dataSource]="capacityPerWorkStation"
+            class="mat-elevation-z8"
+          >
             <!-- Article Column -->
             <ng-container matColumnDef="workstation">
-              <th mat-header-cell *matHeaderCellDef> {{ 'dynamicData.workstation' | translate }} </th>
-              <td mat-cell *matCellDef="let element"> {{element.workstation}} </td>
+              <th mat-header-cell *matHeaderCellDef>
+                {{ "dynamicData.workstation" | translate }}
+              </th>
+              <td mat-cell *matCellDef="let element">
+                {{ element.workstation }}
+              </td>
             </ng-container>
 
             <!-- Amount Column -->
             <ng-container matColumnDef="capacity">
-              <th mat-header-cell *matHeaderCellDef> {{ 'dynamicData.capacity' | translate }} </th>
-              <td mat-cell *matCellDef="let element"> {{element.capacity}} </td>
+              <th mat-header-cell *matHeaderCellDef>
+                {{ "dynamicData.capacity" | translate }}
+              </th>
+              <td mat-cell *matCellDef="let element">{{ element.capacity }}</td>
             </ng-container>
 
-            <tr mat-header-row *matHeaderRowDef="displayedColumnsCapacityPerQueue"></tr>
-            <tr mat-row *matRowDef="let row; columns: displayedColumnsCapacityPerQueue;"></tr>
+            <tr
+              mat-header-row
+              *matHeaderRowDef="displayedColumnsCapacityPerQueue"
+            ></tr>
+            <tr
+              mat-row
+              *matRowDef="let row; columns: displayedColumnsCapacityPerQueue"
+            ></tr>
           </table>
         </mat-tab>
       </mat-tab-group>
-    </mat-tab>
-    <mat-tab label = "{{ 'dynamicData.idleTimeCosts' | translate }}">
-      <table *ngIf="idleTimes.length > 0" mat-table [dataSource]="idleTimes" class="mat-elevation-z8">
-
-        <!-- Workstation Column -->
-        <ng-container matColumnDef="workstation">
-          <th mat-header-cell *matHeaderCellDef> {{ 'dynamicData.workstation' | translate }} </th>
-          <td mat-cell *matCellDef="let element"> {{element.id}} </td>
-        </ng-container>
-
-        <!-- SetupEvents Column -->
-        <ng-container matColumnDef="setupEvents">
-          <th mat-header-cell *matHeaderCellDef> {{ 'dynamicData.setupEvents' | translate }} </th>
-          <td mat-cell *matCellDef="let element"> {{element.setupEvents}} </td>
-        </ng-container>
-
-        <!-- IdleTime Column -->
-        <ng-container matColumnDef="idleTime">
-          <th mat-header-cell *matHeaderCellDef> {{ 'dynamicData.idleTime' | translate }} </th>
-          <td mat-cell *matCellDef="let element"> {{element.idleTime}} </td>
-        </ng-container>
-
-        <!-- WageIdletimeCosts Column -->
-        <ng-container matColumnDef="wageIdletimeCosts">
-          <th mat-header-cell *matHeaderCellDef> {{ 'dynamicData.wageIdleTimeCosts' | translate }} </th>
-          <td mat-cell *matCellDef="let element"> {{element.wageIdletimeCosts}} </td>
-        </ng-container>
-
-        <!-- WageCosts Column -->
-        <ng-container matColumnDef="wageCosts">
-          <th mat-header-cell *matHeaderCellDef> {{ 'dynamicData.wageCosts' | translate }} </th>
-          <td mat-cell *matCellDef="let element"> {{element.wageCosts}} </td>
-        </ng-container>
-
-        <!-- MachineIdleTimeCosts Column -->
-        <ng-container matColumnDef="machineIdleTimeCosts">
-          <th mat-header-cell *matHeaderCellDef> {{ 'dynamicData.machineIdleTimeCosts' | translate }} </th>
-          <td mat-cell *matCellDef="let element"> {{element.machineIdleTimeCosts}} </td>
-        </ng-container>
-
-        <tr mat-header-row *matHeaderRowDef="displayedColumnsIdleTimes"></tr>
-        <tr mat-row *matRowDef="let row; columns: displayedColumnsIdleTimes;"></tr>
-      </table>
     </mat-tab>
   </mat-tab-group>
 </div>
 
 <!-- HTML code for the view of the spinner -->
-<ngx-spinner bdColor="rgba(0, 0, 0, 0.8)" size="large" color="#532e7d" type="ball-spin-clockwise" [fullScreen]="true">
-  <p style="color: white; margin-top: 50px; font-size: 16px; font-weight: bold">{{ 'upload.spinner' | translate }}</p>
+<ngx-spinner
+  bdColor="rgba(0, 0, 0, 0.8)"
+  size="large"
+  color="#532e7d"
+  type="ball-spin-clockwise"
+  [fullScreen]="true"
+>
+  <p style="color: white; margin-top: 50px; font-size: 16px; font-weight: bold">
+    {{ "upload.spinner" | translate }}
+  </p>
 </ngx-spinner>
