@@ -117,7 +117,9 @@
     "explanation": "Hier können Sie die Materialplannung der geplanten Periode begutachten. Außerdem haben Sie die Möglichkeit die geplanten Bestellmengen anzupassen. "
   },
   "download": {
-    "button": "Datei herunterladen"
+    "button": "Datei herunterladen",
+    "title": "Download-Seite",
+    "explanation": "Hier können Sie die Ergebnis-Datei herunterladen. Drücken Sie dazu bitte auf den folgenden Knopf."
   },
   "coreData": {
     "quantityList": "Mengenstückliste",

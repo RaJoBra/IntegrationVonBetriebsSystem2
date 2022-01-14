@@ -112,7 +112,9 @@
     "explanation": "Here you can see the material planning for the period. Additionally you have the option to change the order values of the individual items."
   },
   "download": {
-    "button": "Download file"
+    "button": "Download file",
+    "title": "Download-Page",
+    "explanation": "Here you can download the result file. To do so please press the following button."
   },
   "coreData": {
     "quantityList": "Quantity list",
