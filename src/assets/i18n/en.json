@@ -79,7 +79,8 @@
     "splitAnOrder": "Split an order",
     "checkForNegativeProductionValues": "There are negative production values",
     "currentOrderQuantity": "Current order quantity",
-    "newOrderQuantity": "New order quantity"
+    "newOrderQuantity": "New order quantity",
+    "explanation": "Here you can see and change the order of the production orders by drag and drop. Additionally you can split the orders. To do so you have to click on the 'split' button."
   },
   "capacityPlanning": {
     "workstation": "Workstation",
@@ -91,7 +92,7 @@
     "shift": "Shift",
     "overtime": "Overtime",
     "buffer": "Buffer",
-    "explanation": "Hier sehen Sie die berechnete Kapazitätsplanung. Für jeden Arbeitsplatz die benötigte Anzahl an Schichten und/oder Überstunden angezeigt. Zusätzlich haben Sie die Möglichkeit einen Puffer für die einzelnen Arbeitsplätze anzugeben, welcher dann als Überstunden in Minuten auf die geplanze Zeit addiert wird."
+    "explanation": "Here you can see the calculated capacity planning. You also have the possibility to add a buffer ontop of the calculated time. Please enter the needed time in minutes per day in the buffer column."
   },
   "materialPlanning": {
     "article": "Article",
