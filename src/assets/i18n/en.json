@@ -127,7 +127,14 @@
     "bicycle": "Bicycle",
     "producedParts": "Produced parts",
     "purchasedParts": "Purchased parts",
-    "billOfMaterials": "Bill of materials"
+    "billOfMaterials": "Bill of materials",
+    "titleAllItems": "",
+    "explanationAllItems": "",
+    "titleProducedParts": "",
+    "explanationProducedParts": "",
+    "titlePurchasedParts": "",
+    "explanationPurchasedParts": "",
+    "partNumber": "Part Nr."
   },
   "dashboard": {
     "staticData": "Static data",

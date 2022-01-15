@@ -128,7 +128,20 @@
     "bicycle": "Fahrrad",
     "producedParts": "Eigenfertigungsteile",
     "purchasedParts": "Kaufteile",
-    "billOfMaterials": "Strukturstückliste"
+    "billOfMaterials": "Strukturstückliste",
+    "titleAllItems": "Stammdaten - Mengenstückliste - Alle Teile",
+    "explanationAllItems": "Hier sehen Sie eine Tabelle mit der Mengenübersichtsstückliste für alle Teile, sprich Fertigungs- und Kaufteile.",
+    "titleProducedParts": "Stammdaten - Mengenstückliste - Eigenfertigungsteile",
+    "explanationProducedParts": "Hier sehen Sie eine Tabelle mit der Mengenübersichtsstückliste für alle Eigenfertigungsteile.",
+    "titlePurchasedParts": "Stammdaten - Mengenstückliste - Kaufteile",
+    "explanationPurchasedParts": "Hier sehen Sie eine Tabelle mit der Mengenübersichtsstückliste für alle Kaufteile.",
+    "partNumber": "Teile Nr.",
+    "titleP1": "Stammdaten - Strukturstückliste - P1",
+    "explanationP1": "Hier sehen Sie eine Übersicht der Strukturstückliste für das Fahrrad P1.",
+    "titleP2": "Stammdaten - Strukturstückliste - P2",
+    "explanationP2": "Hier sehen Sie eine Übersicht der Strukturstückliste für das Fahrrad P2.",
+    "titleP3": "Stammdaten - Strukturstückliste - P3",
+    "explanationP3": "Hier sehen Sie eine Übersicht der Strukturstückliste für das Fahrrad P3."
   },
   "dashboard": {
     "staticData": "Stammdaten",
