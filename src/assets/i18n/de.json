@@ -21,7 +21,8 @@
     "english": "Englisch",
     "negative": "Negative Werte",
     "negativeValues": "Es gibt noch negative Werte.",
-    "continue": "Bevor diese Fehler nicht verbessert wurden können Sie nicht weiter machen."
+    "continue": "Bevor diese Fehler nicht verbessert wurden können Sie nicht weiter machen.",
+    "result": "Letztes Ergebnis"
   },
   "home": {
     "heading": "Production Wizzard",
@@ -42,9 +43,9 @@
     "incompatible": "Der Dateityp {{value}} ist nicht mit dem Tool kompatibel.",
     "xml": "Bitte laden Sie eine XML-Datei hoch.",
     "title": "Upload-Seite",
-    "explanation": "Bitte laden Sie hier die Ergebnisdatei der letzten Periode hoch. Akzeptiert werden lediglich XML-Dateien. Wenn eine korrekte Datei hochgeladen wurde, werden Sie auf die nächste Seite weitergeleitet.",
+    "explanation": "Bitte laden Sie hier die Ergebnisdatei der letzten Periode hoch. Akzeptiert werden lediglich XML-Dateien. Es wird geprüft ob es sich um die korrekte Datei handelt und eine entsprechender Hinweis angezeigt.",
     "accepted": "Datei akzeptiert",
-    "acceptedText": "Ihre Datei ist validiert. Sie können nun über die Schaltfläche 'Produktionprogramm' fortfahren.",
+    "acceptedText": "Ihre Datei ist validiert. Sie können nun über die Schaltfläche 'Produktionprogramm' fortfahren. Wenn Sie das Ergebnis der letzten Periode betrachten wollen, verwenden Sie bitte die Schaltfläche 'Letztes Ergebnis'.",
     "rejected": "Datei nicht akzeptiert",
     "rejectedText": "Ihre Datei konnte nicht validiert werden. Bitte setzen Sie den Production Wizzard zurück und laden Sie eine korrekte Datei hoch."
   },
@@ -128,7 +129,20 @@
     "bicycle": "Fahrrad",
     "producedParts": "Eigenfertigungsteile",
     "purchasedParts": "Kaufteile",
-    "billOfMaterials": "Strukturstückliste"
+    "billOfMaterials": "Strukturstückliste",
+    "titleAllItems": "Stammdaten - Mengenstückliste - Alle Teile",
+    "explanationAllItems": "Hier sehen Sie eine Tabelle mit der Mengenübersichtsstückliste für alle Teile, sprich Fertigungs- und Kaufteile.",
+    "titleProducedParts": "Stammdaten - Mengenstückliste - Eigenfertigungsteile",
+    "explanationProducedParts": "Hier sehen Sie eine Tabelle mit der Mengenübersichtsstückliste für alle Eigenfertigungsteile.",
+    "titlePurchasedParts": "Stammdaten - Mengenstückliste - Kaufteile",
+    "explanationPurchasedParts": "Hier sehen Sie eine Tabelle mit der Mengenübersichtsstückliste für alle Kaufteile.",
+    "partNumber": "Teile Nr.",
+    "titleP1": "Stammdaten - Strukturstückliste - P1",
+    "explanationP1": "Hier sehen Sie eine Übersicht der Strukturstückliste für das Fahrrad P1.",
+    "titleP2": "Stammdaten - Strukturstückliste - P2",
+    "explanationP2": "Hier sehen Sie eine Übersicht der Strukturstückliste für das Fahrrad P2.",
+    "titleP3": "Stammdaten - Strukturstückliste - P3",
+    "explanationP3": "Hier sehen Sie eine Übersicht der Strukturstückliste für das Fahrrad P3."
   },
   "dashboard": {
     "staticData": "Stammdaten",
@@ -175,6 +189,9 @@
     "sellwish": "Vertriebswunsch",
     "sales": "Absatz",
     "stockvalue": "Lagerwert Periodendurchschnitt",
-    "storageCosts": "Lagerkosten"
+    "storageCosts": "Lagerkosten",
+    "resultExplanation": "Hier sehen Sie die Kennzahlen des Ergebnisses der letzten Periode sowie den jeweiligen Durchschnitt der letzten Perioden.",
+    "futureInwardStockMovementExplanation": "Hier sehen Sie die noch ausstehenden Lagerzugänge. Genauer wird zu jeder Bestellung die Artikelnummer, Menge, Art der Bestellung sowie die Periode des Ankommens aufgelistet.",
+    "warehousestockExplanation": "Hier sehen Sie den Lagerbestand aller Artikel. Sollte ein Artikel am Ende der Periode nicht auf Lager sein, wird die entsprechende Zeile rot markiert."
   }
 }

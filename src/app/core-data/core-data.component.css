@@ -27,3 +27,10 @@ table {
   margin-left: auto;
   margin-right: auto;
 }
+
+.example-card {
+  max-width: 620px;
+  margin-left:auto;
+  margin-right:auto;  
+  vertical-align:middle;
+}

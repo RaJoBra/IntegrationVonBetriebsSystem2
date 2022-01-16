@@ -2,11 +2,22 @@
   <mat-tab label="{{ 'coreData.quantityList' | translate}}">
     <mat-tab-group mat-align-tabs="center">
       <mat-tab label="{{ 'coreData.allParts' | translate}}">
+        <br/>
+
+        <mat-card class="example-card">
+          <mat-card-title> {{ 'coreData.titleAllItems' | translate }}</mat-card-title>
+          <mat-divider inset></mat-divider>
+          <mat-card-content>
+            <br/>
+            {{ 'coreData.explanationAllItems' | translate }}
+          </mat-card-content>
+        </mat-card>
+
         <table mat-table [dataSource]="dataSourceTab1" class="mat-elevation-z8">
 
           <!-- ArticleID Column -->
           <ng-container matColumnDef="articleId">
-            <th mat-header-cell *matHeaderCellDef></th>
+            <th mat-header-cell *matHeaderCellDef>{{ 'coreData.partNumber' | translate}}</th>
             <td mat-cell *matCellDef="let element"> {{element.articleId}} </td>
           </ng-container>
 
@@ -33,11 +44,22 @@
         </table>
       </mat-tab>
       <mat-tab label="{{ 'coreData.producedParts' | translate}}">
+        <br/>
+
+        <mat-card class="example-card">
+          <mat-card-title> {{ 'coreData.titleProducedParts' | translate }}</mat-card-title>
+          <mat-divider inset></mat-divider>
+          <mat-card-content>
+            <br/>
+            {{ 'coreData.explanationProducedParts' | translate }}
+          </mat-card-content>
+        </mat-card>
+
         <table mat-table [dataSource]="dataSourceTab2" class="mat-elevation-z8">
 
           <!-- ArticleID Column -->
           <ng-container matColumnDef="articleId">
-            <th mat-header-cell *matHeaderCellDef></th>
+            <th mat-header-cell *matHeaderCellDef>{{ 'coreData.partNumber' | translate}}</th>
             <td mat-cell *matCellDef="let element"> {{element.articleId}} </td>
           </ng-container>
 
@@ -64,11 +86,22 @@
         </table>
       </mat-tab>
       <mat-tab label="{{ 'coreData.purchasedParts' | translate}}">
+        <br/>
+
+        <mat-card class="example-card">
+          <mat-card-title> {{ 'coreData.titlePurchasedParts' | translate }}</mat-card-title>
+          <mat-divider inset></mat-divider>
+          <mat-card-content>
+            <br/>
+            {{ 'coreData.explanationPurchasedParts' | translate }}
+          </mat-card-content>
+        </mat-card>
+
         <table mat-table [dataSource]="dataSourceTab3" class="mat-elevation-z8">
 
           <!-- ArticleID Column -->
           <ng-container matColumnDef="articleId">
-            <th mat-header-cell *matHeaderCellDef></th>
+            <th mat-header-cell *matHeaderCellDef>{{ 'coreData.partNumber' | translate}}</th>
             <td mat-cell *matCellDef="let element"> {{element.articleId}} </td>
           </ng-container>
 
@@ -99,12 +132,45 @@
   <mat-tab label="{{ 'coreData.billOfMaterials' | translate}}">
     <mat-tab-group mat-align-tabs="center">
       <mat-tab label="{{ 'coreData.bicycle' | translate}} P1">
+        <br/>
+
+        <mat-card class="example-card">
+          <mat-card-title> {{ 'coreData.titleP1' | translate }}</mat-card-title>
+          <mat-divider inset></mat-divider>
+          <mat-card-content>
+            <br/>
+            {{ 'coreData.explanationP1' | translate }}
+          </mat-card-content>
+        </mat-card>
+            <br/>
         <img class="piccenter" src="assets/pictures/Structural list p1.png">
       </mat-tab>
       <mat-tab label="{{ 'coreData.bicycle' | translate}} P2">
+        <br/>
+
+        <mat-card class="example-card">
+          <mat-card-title> {{ 'coreData.titleP2' | translate }}</mat-card-title>
+          <mat-divider inset></mat-divider>
+          <mat-card-content>
+            <br/>
+            {{ 'coreData.explanationP2' | translate }}
+          </mat-card-content>
+        </mat-card>
+            <br/>
         <img class="piccenter" src="assets/pictures/Structural list p2.png">
       </mat-tab>
       <mat-tab label="{{ 'coreData.bicycle' | translate}} P3">
+        <br/>
+
+        <mat-card class="example-card">
+          <mat-card-title> {{ 'coreData.titleP3' | translate }}</mat-card-title>
+          <mat-divider inset></mat-divider>
+          <mat-card-content>
+            <br/>
+            {{ 'coreData.explanationP3' | translate }}
+          </mat-card-content>
+        </mat-card>
+            <br/>
         <img class="piccenter" src="assets/pictures/Structural list p3.png">
       </mat-tab>
     </mat-tab-group>

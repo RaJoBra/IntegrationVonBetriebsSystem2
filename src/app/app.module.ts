@@ -61,6 +61,7 @@ import { ManualComponent } from './manual/manual.component';
 import { FileUploadDialogTypesComponent } from './file-upload-dialog-types/file-upload-dialog-types.component';
 import {MatCardModule} from '@angular/material/card';
 import {MatDividerModule} from '@angular/material/divider';
+import { ResultComponent } from './result/result.component';
 
 @NgModule({
   declarations: [
@@ -96,7 +97,8 @@ import {MatDividerModule} from '@angular/material/divider';
     DynamicDataComponent,
     NavbarDialogComponent,
     ManualComponent,
-    FileUploadDialogTypesComponent
+    FileUploadDialogTypesComponent,
+    ResultComponent
   ],
   imports: [
     AppRoutingModule,

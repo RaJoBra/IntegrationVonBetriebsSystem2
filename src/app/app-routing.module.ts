@@ -21,6 +21,7 @@ import { CoreDataComponent } from './core-data/core-data.component'
 import { TutorialComponent } from './tutorial/tutorial.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ManualComponent } from './manual/manual.component';
+import { ResultComponent } from './result/result.component';
 
 const routes: Routes = [
   { path: '',   redirectTo: '/index', pathMatch: 'full' },
@@ -45,6 +46,8 @@ const routes: Routes = [
   { path: 'tutorial', component: TutorialComponent },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'manual', component: ManualComponent },
+  { path: 'result', component: ResultComponent },
+
 ];
 
 @NgModule({
