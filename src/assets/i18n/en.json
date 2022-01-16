@@ -177,8 +177,8 @@
     "sales": "Sales",
     "stockvalue": "Stockvalue",
     "storageCosts": "Storage costs",
-    "resultExplanation": "Hier sehen Sie die Kennzahlen des Ergebnisses der letzten Periode sowie den Durchschnitt der letzten Perioden.",
-    "futureInwardStockMovementExplanation": "Hier sehen Sie die noch ausstehenden Lagerzugänge. Genauer wird zu jeder Bestellung die Artikelnummer, Menge, Art der Bestellung und die Periode des Ankommens aufgelistet.",
-    "warehousestockExplanation": "Hier sehen Sie den Lagerbestand aller Artikel. Sollte ein Artikel am Ende der Peroiode nicht auf Lager sein, wird die entsprechende Zeile rot markiert."
+    "resultExplanation": "Here you can see some KPIs of the result from the last period. ",
+    "futureInwardStockMovementExplanation": "Here you can see the the future inward stock movement. ",
+    "warehousestockExplanation": "Here you can see the warehouse stock at the end of the period. If an article if out of stock the corresponding row will be highlighted in red."
   }
 }
