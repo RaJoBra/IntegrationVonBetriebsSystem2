@@ -62,6 +62,7 @@ import { FileUploadDialogTypesComponent } from './file-upload-dialog-types/file-
 import {MatCardModule} from '@angular/material/card';
 import {MatDividerModule} from '@angular/material/divider';
 import { ResultComponent } from './result/result.component';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -144,7 +145,8 @@ import { ResultComponent } from './result/result.component';
   providers: [{
     provide: LOCALE_ID,
     useValue: 'de' // 'de' for Germany, 'fr' for France ...
-   }],
+   },
+   {provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
