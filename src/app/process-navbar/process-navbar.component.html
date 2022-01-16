@@ -1,18 +1,29 @@
 <mat-toolbar color="primary">
-  <mat-toolbar-row class="justify-content-center" >
+  <mat-toolbar-row class="justify-content-center">
     <span class="p-2"></span>
-    
-    <span *ngIf="getProductionProgram(); else disabledResult">
-      <a mat-button [routerLink]="'/result'" routerLinkActive="active">{{ 'navbar.result' | translate }}</a>
+
+    <span
+      *ngIf="getProductionProgram(); else disabledResult"
+      style="display: flex"
+    >
+      <a mat-button [routerLink]="'/result'" routerLinkActive="active">{{
+        "navbar.result" | translate
+      }}</a>
     </span>
+    &nbsp;&nbsp;
     <ng-template #disabledResult>
-      <a mat-button [disabled]="true">{{ 'navbar.result' | translate }}</a>
-    </ng-template> 
+      <a mat-button [disabled]="true">{{ "navbar.result" | translate }}</a>
+    </ng-template>
 
-    <div class="progressbar d-flex justify-content-center" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">
-      <a mat-button [routerLink]="'/file-upload'" routerLinkActive="active">{{ 'navbar.upload' | translate }}</a>
+    <div
+      class="progressbar d-flex justify-content-center"
+      routerLinkActive="active-link"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
+      <a mat-button [routerLink]="'/file-upload'" routerLinkActive="active">{{
+        "navbar.upload" | translate
+      }}</a>
 
-      
       <!-- <span *ngIf="getProductionProgram(); else disabledProductionProgram">
         <a mat-button [routerLink]="'/production-program'" routerLinkActive="active">{{ 'navbar.productionProgram' | translate }}</a>
       </span>
@@ -21,40 +32,75 @@
       </ng-template> -->
 
       <span *ngIf="getProductionProgram(); else disabledProductionProgram">
-        <a mat-button [routerLink]="'/production-program'" routerLinkActive="active">{{ 'navbar.productionProgram' | translate }}</a>
+        <a
+          mat-button
+          [routerLink]="'/production-program'"
+          routerLinkActive="active"
+          >{{ "navbar.productionProgram" | translate }}</a
+        >
       </span>
       <ng-template #disabledProductionProgram>
-        <a mat-button [disabled]="true">{{ 'navbar.productionProgram' | translate }}</a>
+        <a mat-button [disabled]="true">{{
+          "navbar.productionProgram" | translate
+        }}</a>
       </ng-template>
       <span *ngIf="getDisposition(); else disabledDisposition">
-        <a mat-button (click)="checkRouteToDisposition()">{{ 'navbar.disposition' | translate }}</a>
+        <a mat-button (click)="checkRouteToDisposition()">{{
+          "navbar.disposition" | translate
+        }}</a>
       </span>
       <ng-template #disabledDisposition>
-        <a mat-button [disabled]="true">{{ 'navbar.disposition' | translate }}</a>
+        <a mat-button [disabled]="true">{{
+          "navbar.disposition" | translate
+        }}</a>
       </ng-template>
-      <span *ngIf="getManufacturingSequence(); else disabledManufacturingSequence">
-        <a mat-button (click)="checkRouteToManufacturingSequence()">{{ 'navbar.manufacturingSequence' | translate }}</a>
+      <span
+        *ngIf="getManufacturingSequence(); else disabledManufacturingSequence"
+      >
+        <a mat-button (click)="checkRouteToManufacturingSequence()">{{
+          "navbar.manufacturingSequence" | translate
+        }}</a>
       </span>
       <ng-template #disabledManufacturingSequence>
-        <a mat-button [disabled]="true">{{ 'navbar.manufacturingSequence' | translate }}</a>
+        <a mat-button [disabled]="true">{{
+          "navbar.manufacturingSequence" | translate
+        }}</a>
       </ng-template>
       <span *ngIf="getCapacityPlanning(); else disabledCapacityPlanning">
-        <a mat-button (click)="checkRouteToCapacityPlanning()">{{ 'navbar.capacityPlanning' | translate }}</a>
+        <a mat-button (click)="checkRouteToCapacityPlanning()">{{
+          "navbar.capacityPlanning" | translate
+        }}</a>
       </span>
       <ng-template #disabledCapacityPlanning>
-        <a mat-button [disabled]="true">{{ 'navbar.capacityPlanning' | translate }}</a>
+        <a mat-button [disabled]="true">{{
+          "navbar.capacityPlanning" | translate
+        }}</a>
       </ng-template>
       <span *ngIf="getMaterialPlanning(); else disabledMaterialPlanning">
-        <a mat-button (click)="checkRouteToMaterialPlanning()" [routerLink]="'/material-planning'" routerLinkActive="active">{{ 'navbar.materialPlanning' | translate }}</a>
+        <a
+          mat-button
+          (click)="checkRouteToMaterialPlanning()"
+          [routerLink]="'/material-planning'"
+          routerLinkActive="active"
+          >{{ "navbar.materialPlanning" | translate }}</a
+        >
       </span>
       <ng-template #disabledMaterialPlanning>
-        <a mat-button [disabled]="true">{{ 'navbar.materialPlanning' | translate }}</a>
+        <a mat-button [disabled]="true">{{
+          "navbar.materialPlanning" | translate
+        }}</a>
       </ng-template>
       <span *ngIf="getExport(); else disabledExport">
-        <a mat-button (click)="checkRouteToFileDownload()" [routerLink]="'/export'" routerLinkActive="active">{{ 'navbar.export' | translate }}</a>
+        <a
+          mat-button
+          (click)="checkRouteToFileDownload()"
+          [routerLink]="'/export'"
+          routerLinkActive="active"
+          >{{ "navbar.export" | translate }}</a
+        >
       </span>
       <ng-template #disabledExport>
-        <a mat-button [disabled]="true">{{ 'navbar.export' | translate }}</a>
+        <a mat-button [disabled]="true">{{ "navbar.export" | translate }}</a>
       </ng-template>
     </div>
   </mat-toolbar-row>
