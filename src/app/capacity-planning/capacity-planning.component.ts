@@ -10,6 +10,7 @@ import { ProcessNavbarComponent } from '../process-navbar/process-navbar.compone
 import { NavbarComponent } from '../navbar/navbar.component';
 import { NgxSpinnerService } from 'ngx-spinner';
 
+
 export interface CapacityPlanningElement {
   workstation: number;
   shift: number;
@@ -1213,8 +1214,8 @@ export class CapacityPlanningComponent implements OnInit {
         this.dataSource[x].totalCapacityRequirements <= 3600 &&
         this.dataSource[x].totalCapacityRequirements > 2400
       ) {
-        this.dataSource[x].overtime =
-          (this.dataSource[x].totalCapacityRequirements - 2400) / 5;
+        this.dataSource[x].overtime = 
+        Math.ceil((this.dataSource[x].totalCapacityRequirements - 2400) / 5);
       }
       if (
         this.dataSource[x].totalCapacityRequirements <= 4800 &&
@@ -1227,7 +1228,7 @@ export class CapacityPlanningComponent implements OnInit {
         this.dataSource[x].totalCapacityRequirements > 4800
       ) {
         this.dataSource[x].overtime =
-          (this.dataSource[x].totalCapacityRequirements - 4800) / 5;
+        Math.ceil((this.dataSource[x].totalCapacityRequirements - 4800) / 5);
       }
       if (this.dataSource[x].totalCapacityRequirements > 6000) {
         this.dataSource[x].shift = 3;
