@@ -192,6 +192,6 @@
     "storageCosts": "Lagerkosten",
     "resultExplanation": "Hier sehen Sie die Kennzahlen des Ergebnisses der letzten Periode sowie den jeweiligen Durchschnitt der letzten Perioden.",
     "futureInwardStockMovementExplanation": "Hier sehen Sie die noch ausstehenden Lagerzugänge. Genauer wird zu jeder Bestellung die Artikelnummer, Menge, Art der Bestellung sowie die Periode des Ankommens aufgelistet.",
-    "warehousestockExplanation": "Hier sehen Sie den Lagerbestand aller Artikel. Sollte ein Artikel am Ende der Periode nicht auf Lager sein, wird die entsprechende Zeile rot markiert."
+    "warehousestockExplanation": "Hier sehen Sie den Lagerbestand aller Artikel. Sollte ein Artikel am Ende der letzten Periode nicht auf Lager sein, wird die entsprechende Zeile rot markiert."
   }
 }
