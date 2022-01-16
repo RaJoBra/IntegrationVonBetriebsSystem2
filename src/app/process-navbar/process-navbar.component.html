@@ -1,8 +1,25 @@
 <mat-toolbar color="primary">
   <mat-toolbar-row class="justify-content-center" >
     <span class="p-2"></span>
+    
+    <span *ngIf="getProductionProgram(); else disabledResult">
+      <a mat-button [routerLink]="'/result'" routerLinkActive="active">{{ 'navbar.result' | translate }}</a>
+    </span>
+    <ng-template #disabledResult>
+      <a mat-button [disabled]="true">{{ 'navbar.result' | translate }}</a>
+    </ng-template> 
+
     <div class="progressbar d-flex justify-content-center" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">
       <a mat-button [routerLink]="'/file-upload'" routerLinkActive="active">{{ 'navbar.upload' | translate }}</a>
+
+      
+      <!-- <span *ngIf="getProductionProgram(); else disabledProductionProgram">
+        <a mat-button [routerLink]="'/production-program'" routerLinkActive="active">{{ 'navbar.productionProgram' | translate }}</a>
+      </span>
+      <ng-template #disabledProductionProgram>
+        <a mat-button [disabled]="true">{{ 'navbar.productionProgram' | translate }}</a>
+      </ng-template> -->
+
       <span *ngIf="getProductionProgram(); else disabledProductionProgram">
         <a mat-button [routerLink]="'/production-program'" routerLinkActive="active">{{ 'navbar.productionProgram' | translate }}</a>
       </span>

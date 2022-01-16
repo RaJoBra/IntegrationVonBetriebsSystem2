@@ -21,7 +21,8 @@
     "export": "Export XML",
     "negative": "Negative values",
     "negativeValues": "There are still negative values.",
-    "continue": "Until these errors are improved you can not continue."
+    "continue": "Until these errors are improved you can not continue.",
+    "result": "Last Result"
   },
   "home": {
     "heading": "Production Wizzard",
@@ -41,11 +42,11 @@
     "incompatible": "The {{value}} file type is not compatible with the tool.",
     "xml": "Please upload an XML file.",
     "title": "Upload-Page",
-    "explanation": "Please upload the result file of the last period. Only XML-files are accepted. When a correct file was uploaded, you will be redirected.",
-    "accepted": "Datei akzeptiert",
-    "acceptedText": "Ihre Datei ist validiert. Sie können nun über 'Produktionprogramm' fortfahren.",
-    "rejected": "Datei nicht akzeptiert",
-    "rejectedText": "Ihre Datei konnte nicht validiert werden. Bitte setzen Sie den Production Wizzard zurück und laden Sie eine korrekte Datei hoch."
+    "explanation": "Please upload the result file of the last period. Only XML-files are accepted. After upload the the file is validated.",
+    "accepted": "File accepted",
+    "acceptedText": "Your file is valid. To continue please press 'Production Program'. If you want to look at the result of the last period please press 'Last Result'.",
+    "rejected": "File not accepted",
+    "rejectedText": "Your file is not valid. Please reset the Tool and upload the correct XML file."
   },
   "productionProgram": {
     "currentPeriod": "Current period",
@@ -175,6 +176,9 @@
     "sellwish": "Sellwish",
     "sales": "Sales",
     "stockvalue": "Stockvalue",
-    "storageCosts": "Storage costs"
+    "storageCosts": "Storage costs",
+    "resultExplanation": "Hier sehen Sie die Kennzahlen des Ergebnisses der letzten Periode sowie den Durchschnitt der letzten Perioden.",
+    "futureInwardStockMovementExplanation": "Hier sehen Sie die noch ausstehenden Lagerzugänge. Genauer wird zu jeder Bestellung die Artikelnummer, Menge, Art der Bestellung und die Periode des Ankommens aufgelistet.",
+    "warehousestockExplanation": "Hier sehen Sie den Lagerbestand aller Artikel. Sollte ein Artikel am Ende der Peroiode nicht auf Lager sein, wird die entsprechende Zeile rot markiert."
   }
 }

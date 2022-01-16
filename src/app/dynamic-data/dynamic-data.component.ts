@@ -13,8 +13,8 @@ import {ProcessNavbarComponent} from '../process-navbar/process-navbar.component
 interface WareHouseStock {
   article: number;
   amount: number;
-  price: string;
-  value: string;
+  // price: string;
+  // value: string;
 }
 
 interface CapacityPerWorkstation {
@@ -41,7 +41,8 @@ interface StrategicDataTableElement {
   styleUrls: ['./dynamic-data.component.css', '../app.component.css']
 })
 export class DynamicDataComponent implements OnInit {
-  displayedColumnsWareHouseStock: string[] = ['article', 'amount', 'price', 'value'];
+  // displayedColumnsWareHouseStock: string[] = ['article', 'amount', 'price', 'value'];
+  displayedColumnsWareHouseStock: string[] = ['article', 'amount'];
   displayedColumnsQueues: string[] = ['article', 'amount', 'time', 'workstation'];
   displayedColumnsCapacityPerQueue: string[] = ['workstation', 'capacity'];
   displayedColumnsFutureInwardStockMovement: string[] = ['article', 'amount', 'arrivingPeriod', 'mode'];
@@ -150,8 +151,8 @@ export class DynamicDataComponent implements OnInit {
       let warehousestockentry: WareHouseStock = {
         article: article.id,
         amount: article.amount,
-        price: article.price.toFixed(2),
-        value: (article.amount * article.price).toFixed(2),
+        // price: article.price.toFixed(2),
+        // value: (article.amount * article.price).toFixed(2),
       }
       this.wareHouseStockDataSource.push(warehousestockentry);
     })
