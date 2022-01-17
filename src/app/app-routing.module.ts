@@ -45,7 +45,7 @@ const routes: Routes = [
   { path: 'core-data', component: CoreDataComponent },
   { path: 'tutorial', component: TutorialComponent },
   { path: 'dashboard', component: DashboardComponent },
-  { path: 'manual', component: ManualComponent },
+  // { path: 'manual', component: ManualComponent },
   { path: 'result', component: ResultComponent },
 
 ];

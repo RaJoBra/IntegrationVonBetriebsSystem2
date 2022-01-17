@@ -12742,10 +12742,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _core_data_core_data_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./core-data/core-data.component */ "Wfku");
 /* harmony import */ var _tutorial_tutorial_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./tutorial/tutorial.component */ "PT6J");
 /* harmony import */ var _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./dashboard/dashboard.component */ "QX6l");
-/* harmony import */ var _manual_manual_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./manual/manual.component */ "z2cn");
-/* harmony import */ var _result_result_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./result/result.component */ "nNT0");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! @angular/core */ "fXoL");
-
+/* harmony import */ var _result_result_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./result/result.component */ "nNT0");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! @angular/core */ "fXoL");
 
 
 
@@ -12792,15 +12790,15 @@ const routes = [
     { path: 'core-data', component: _core_data_core_data_component__WEBPACK_IMPORTED_MODULE_18__["CoreDataComponent"] },
     { path: 'tutorial', component: _tutorial_tutorial_component__WEBPACK_IMPORTED_MODULE_19__["TutorialComponent"] },
     { path: 'dashboard', component: _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_20__["DashboardComponent"] },
-    { path: 'manual', component: _manual_manual_component__WEBPACK_IMPORTED_MODULE_21__["ManualComponent"] },
-    { path: 'result', component: _result_result_component__WEBPACK_IMPORTED_MODULE_22__["ResultComponent"] },
+    // { path: 'manual', component: ManualComponent },
+    { path: 'result', component: _result_result_component__WEBPACK_IMPORTED_MODULE_21__["ResultComponent"] },
 ];
 class AppRoutingModule {
 }
 AppRoutingModule.ɵfac = function AppRoutingModule_Factory(t) { return new (t || AppRoutingModule)(); };
-AppRoutingModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_23__["ɵɵdefineNgModule"]({ type: AppRoutingModule });
-AppRoutingModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_23__["ɵɵdefineInjector"]({ imports: [[_angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"].forRoot(routes)], _angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_23__["ɵɵsetNgModuleScope"](AppRoutingModule, { imports: [_angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"]], exports: [_angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"]] }); })();
+AppRoutingModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_22__["ɵɵdefineNgModule"]({ type: AppRoutingModule });
+AppRoutingModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_22__["ɵɵdefineInjector"]({ imports: [[_angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"].forRoot(routes)], _angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_22__["ɵɵsetNgModuleScope"](AppRoutingModule, { imports: [_angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"]], exports: [_angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"]] }); })();
 
 
 /***/ }),
