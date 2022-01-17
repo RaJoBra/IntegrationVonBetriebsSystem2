@@ -19,9 +19,12 @@
       <a mat-button [routerLink]="'/dashboard'" routerLinkActive="active">{{
         "navbar.dashboard" | translate
       }}</a>
-      <a mat-button [routerLink]="'/manual'" routerLinkActive="active">{{
+      <!-- <a mat-button [routerLink]="'/manual'" routerLinkActive="active">{{
         "navbar.manual" | translate
-      }}</a>
+      }}</a> -->
+      <a mat-button (click)="linkManual()">{{
+        "navbar.manual" | translate
+      }}</a> 
     </div>
     <div>
       <button mat-button [matMenuTriggerFor]="menu" style="color: white">

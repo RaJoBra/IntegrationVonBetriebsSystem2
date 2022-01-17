@@ -23,6 +23,17 @@ export class NavbarComponent implements OnInit {
     ).label;
   }
 
+  linkManual() {
+    // location.href='http://www.iwi.hs-karlsruhe.de/scs8/downloadFile?folderName=download&fileName=Handbuch-Teil1_DE.pdf';
+    window.open(
+      // 'http://www.iwi.hs-karlsruhe.de/scs8/downloadFile?folderName=download&fileName=Handbuch-Teil1_DE.pdf',
+      //'https://drive.google.com/file/d/10uDM26Wf5qWiRsrqFzYCLbQgtmAe3opC/view?usp=sharing',
+      'https://drive.google.com/file/d/10UYgPHFDzGRGTfgHHkSVO-KTvcVmLuH2/view?usp=sharing',
+      '_blank'
+    );
+  }
+
+
   ngOnInit(): void {}
 
 }
