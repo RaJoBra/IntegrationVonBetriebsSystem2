@@ -19,9 +19,9 @@
     "export": "XML exportieren",
     "german": "Deutsch",
     "english": "Englisch",
-    "negative": "Negative Werte",
-    "negativeValues": "Es gibt noch negative Werte.",
-    "continue": "Bevor diese Fehler nicht verbessert wurden können Sie nicht weiter machen.",
+    "negative": "Ungültige Eingaben",
+    "negativeValues": "Einer oder mehrere der eingegebenen Werte ist negativ.",
+    "continue": "Bitte korrigieren Sie diesen Wert sodass er nicht negativ ist um fortzufahren.",
     "result": "Letztes Ergebnis"
   },
   "home": {
@@ -38,7 +38,7 @@
     "uploadAgain": "Im nächsten Schritt müssen Sie die Datei neu hochladen.",
     "languageReset": "Die Sprache wird ebenfalls zurückgesetzt und muss danach eventuell neu eingestellt werden.",
     "continue": "Wollen Sie wirklich fortsetzen?",
-    "spinner": "Laden...",
+    "spinner": "Bitte warten...",
     "fileType": "Wrong file type",
     "incompatible": "Der Dateityp {{value}} ist nicht mit dem Tool kompatibel.",
     "xml": "Bitte laden Sie eine XML-Datei hoch.",
